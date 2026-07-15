@@ -5,21 +5,15 @@ function TopBar() {
     <div style={{ background: KK.ink, color: 'rgba(255,255,255,.72)' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '0 20px', height: 42, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 9, fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.08em', fontSize: 12, whiteSpace: 'nowrap', overflow: 'hidden' }}>
-          <span style={{ color: KK.red, fontWeight: 600 }}>Upcoming Game</span>
-          <span style={{ color: '#fff' }}>Brusly VS Live Oak</span>
-          <span style={{ opacity: .4 }}>/</span><span>March 10, 2026</span>
-          <span style={{ opacity: .4 }}>/</span><span>Brusly HS Field</span>
+          <span style={{ color: KK.red, fontWeight: 600 }}>Class of 2027</span>
+          <span style={{ color: '#fff' }}>Lady Dukes — Louisiana 16U</span>
+          <span style={{ opacity: .4 }}>/</span><span>Brusly High School</span>
+          <span style={{ opacity: .4 }}>/</span><span>Utility · C / CF / IF</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.06em', fontSize: 12, whiteSpace: 'nowrap' }}>
-          <span>kamri@example.com</span>
+          <span>kamrikeith27@gmail.com</span>
           <span style={{ opacity: .3 }}>/</span>
-          <span>(225) 555-0105</span>
-          <span style={{ opacity: .3 }}>/</span>
-          <div style={{ display: 'flex', gap: 12, fontFamily: KK.body }}>
-            {['f', 'in', 't', 'v'].map(s => (
-              <a key={s} href="#" style={{ color: 'rgba(255,255,255,.6)', textDecoration: 'none', fontSize: 12, fontWeight: 700 }}>{s}</a>
-            ))}
-          </div>
+          <span>(225) 577-1358</span>
         </div>
       </div>
     </div>

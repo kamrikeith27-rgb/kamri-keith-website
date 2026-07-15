@@ -1,16 +1,16 @@
-/* Recruiting site — BigSlam "Roster" style tall cards → Kamri's pitch arsenal. */
+/* Recruiting site — BigSlam "Roster" style tall cards → Kamri's positions. */
 function Roster() {
   const { KK, GLButton, SectionHead } = window;
   const pitches = [
-    { img: 'pitching-royal-duo.jpg', name: 'Fastball', stat: '65 MPH', no: '01' },
-    { img: 'pitching-black-duo.jpg', name: 'Rise Ball', stat: '1900 RPM', no: '02' },
-    { img: 'portrait-red.jpg', name: 'Drop Ball', stat: 'Late Break', no: '03' },
-    { img: 'fielding-bandits.jpg', name: 'Changeup', stat: 'Any Count', no: '04' },
+    { img: 'kamri-catcher.jpg', name: 'Catcher', stat: 'Behind the plate', no: '01' },
+    { img: 'kamri-brusly-bat.jpg', name: 'Center Field', stat: 'Range & arm', no: '02' },
+    { img: 'kamri-brusly-portrait.jpg', name: 'Utility / Infield', stat: 'Anywhere needed', no: '03' },
+    { img: 'portrait-red.jpg', name: 'Slapper', stat: 'Speed & contact', no: '04' },
   ];
   return (
     <section id="roster" style={{ background: '#fff', padding: '90px 20px' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto' }}>
-        <SectionHead eyebrow="What I throw" title="The Arsenal" action={<GLButton variant="outlineDark" size="sm" href="#stats">Full Scouting</GLButton>} />
+        <SectionHead eyebrow="Where she plays" title="The Positions" action={<GLButton variant="outlineDark" size="sm" href="#stats">Full Profile</GLButton>} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 16 }}>
           {pitches.map((p, i) => (
             <div key={i} style={{ position: 'relative', aspectRatio: '3 / 4', overflow: 'hidden', cursor: 'pointer' }} className="kk-rostercard">

@@ -10,44 +10,40 @@ function Footer({ onContact }) {
       <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '64px 20px 44px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 40 }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-            <NumberMark value="5" tone="royal" size={44} />
+            <NumberMark value="00" tone="royal" size={44} />
             <span style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', fontSize: 24, color: '#fff' }}>Kamri Keith</span>
           </div>
           <p style={{ fontFamily: KK.body, fontSize: 14.5, color: 'rgba(255,255,255,.6)', maxWidth: 260, lineHeight: 1.65, margin: '0 0 18px' }}>
-            RHP · #5 · Class of 2027. Competing for a program that competes for championships.
+            Utility · #00 · Class of 2027. Team player, leader, competitor — ready to compete for your program.
           </p>
           <GLButton variant="red" size="sm" onClick={onContact}>Recruit Me</GLButton>
         </div>
         <div>
           <H>Explore</H>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            {[['Home', '#home'], ['Schedule', '#schedule'], ['Stats', '#stats'], ['Highlights', '#highlights'], ['Roster', '#roster'], ['About', '#about']].map(([l, h]) => <a key={l} href={h} style={flink}>{l}</a>)}
+            {[['Home', '#home'], ['About', '#about'], ['Stats', '#stats'], ['Positions', '#roster'], ['Highlights', '#highlights']].map(([l, h]) => <a key={l} href={h} style={flink}>{l}</a>)}
           </div>
         </div>
         <div>
           <H>Contact Info</H>
           <div style={{ fontFamily: KK.body, fontSize: 14.5, color: 'rgba(255,255,255,.66)', lineHeight: 1.9 }}>
             Brusly, Louisiana<br />
-            <a href="mailto:kamri@example.com" style={flink}>kamri@example.com</a><br />
-            (225) 555-0105
-          </div>
-          <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
-            {['f', 'in', 't', 'v'].map(s => (
-              <span key={s} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 32, height: 32, borderRadius: '50%', border: '1px solid rgba(255,255,255,.25)', fontFamily: KK.body, fontWeight: 700, fontSize: 12, color: '#fff' }}>{s}</span>
-            ))}
+            <a href="mailto:kamrikeith27@gmail.com" style={flink}>kamrikeith27@gmail.com</a><br />
+            Kamri — (225) 577-1358<br />
+            Kim Spriggs (mom) — (225) 577-2606
           </div>
         </div>
         <div>
           <H>Recruiting</H>
           <div style={{ fontFamily: KK.body, fontSize: 14.5, color: 'rgba(255,255,255,.66)', lineHeight: 1.9 }}>
-            Position — RHP<br />Grad Year — 2027<br />GPA — 4.0<br />Fastball — 65 MPH<br />Bats / Throws — R / R
+            Position — Utility · C / CF / IF<br />Grad Year — 2027<br />GPA — 3.87 · ACT 19<br />Bats / Throws — R / R<br />Club Coach — Jennifer Sibley
           </div>
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(255,255,255,.1)' }}>
         <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '20px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10, fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.08em', fontSize: 11.5, color: 'rgba(255,255,255,.5)' }}>
           <span>© 2026 Kamri Keith. All Rights Reserved.</span>
-          <span>RHP · #5 · Brusly, LA</span>
+          <span>Utility · #00 · Brusly, LA</span>
         </div>
       </div>
     </footer>

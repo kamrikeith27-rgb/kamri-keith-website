@@ -7,18 +7,12 @@ function SiteApp() {
       <window.TopBar />
       <window.Nav onContact={open} />
       <window.Hero onContact={open} />
-      <window.ScoreBand />
-      <window.Promos />
-      <window.Schedule />
-      <window.Results />
-      <window.TopStories />
-      <window.Standings />
-      <window.Videos />
-      <window.Roster />
       <window.About />
-      <window.CTA onContact={open} />
-      <window.Sponsors />
+      <window.StatsTable />
+      <window.Roster />
+      <window.Videos />
       <window.Gallery />
+      <window.CTA onContact={open} />
       <window.Footer onContact={open} />
       <window.ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </div>

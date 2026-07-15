@@ -1,13 +1,12 @@
 /* Recruiting site — BigSlam "From Instagram" full-bleed square grid. */
 function Gallery() {
   const { KK } = window;
-  const imgs = ['portrait-red.jpg', 'pitching-royal.jpg', 'fielding-bandits.jpg', 'dugout.jpg', 'pitching-black.jpg', 'turf-circle.jpg', 'portrait-red.jpg', 'fielding-bandits.jpg'];
+  const imgs = ['kamri-brusly-portrait.jpg', 'kamri-catcher.jpg', 'kamri-brusly-bat.jpg', 'kamri-catcher-dukes.jpg', 'portrait-red.jpg', 'kamri-catcher.jpg', 'kamri-brusly-bat.jpg', 'kamri-brusly-portrait.jpg'];
   return (
     <section style={{ background: KK.ink }}>
       <div style={{ textAlign: 'center', padding: '54px 20px 30px' }}>
-        <div style={{ fontFamily: KK.script, fontSize: 30, color: KK.red, lineHeight: 1 }}>Follow along</div>
-        <h2 style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', fontSize: 'clamp(28px,4vw,42px)', color: '#fff', margin: '2px 0 0' }}>From Instagram</h2>
-        <div style={{ fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.14em', fontSize: 13, color: KK.gold, marginTop: 8 }}>@kamrikeith5</div>
+        <div style={{ fontFamily: KK.script, fontSize: 30, color: KK.red, lineHeight: 1 }}>On the field</div>
+        <h2 style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', fontSize: 'clamp(28px,4vw,42px)', color: '#fff', margin: '2px 0 0' }}>Gallery</h2>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
         {imgs.map((g, i) => (

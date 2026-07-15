@@ -21,7 +21,7 @@ function ContactModal({ open, onClose }) {
           </form>
         ) : (
           <div style={{ textAlign: 'center', padding: '10px 0' }}>
-            <NumberMark value="5" tone="accent" size={80} />
+            <NumberMark value="00" tone="accent" size={80} />
             <h3 style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', fontSize: 30, margin: '14px 0 6px', color: KK.ink }}>You're All Set</h3>
             <p style={{ fontFamily: KK.body, color: '#6b7280', fontSize: 15, margin: 0 }}>Thanks for reaching out — I'll be in touch soon.</p>
             <div style={{ marginTop: 18 }}><GLButton variant="outlineDark" size="sm" onClick={onClose}>Close</GLButton></div>
