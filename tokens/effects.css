@@ -1,0 +1,30 @@
+/* Kamri Keith — Radii, borders, shadows, motion */
+:root {
+  /* Corner radii — athletic: mostly tight, pills for tags/buttons */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-hair: 1px solid var(--border-subtle);
+
+  /* Shadows — soft ambient + a hard offset "sticker" shadow for cards/badges */
+  --shadow-sm: 0 1px 2px rgba(15,18,22,.06), 0 1px 3px rgba(15,18,22,.08);
+  --shadow-md: 0 6px 16px rgba(15,18,22,.10);
+  --shadow-lg: 0 18px 40px rgba(15,18,22,.16);
+  --shadow-hard: 6px 6px 0 var(--ink-900);        /* varsity offset */
+  --shadow-hard-royal: 6px 6px 0 var(--red-600);
+  --shadow-glow: 0 0 0 4px rgba(21,194,214,.35);  /* cyan focus glow */
+
+  /* Motion — quick, punchy, minimal bounce */
+  --ease-out: cubic-bezier(.2,.7,.3,1);     /* @kind other */
+  --ease-in-out: cubic-bezier(.65,.05,.36,1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur: 180ms;      /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+}

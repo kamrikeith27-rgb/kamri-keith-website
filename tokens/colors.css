@@ -1,0 +1,76 @@
+/* Kamri Keith — Color tokens
+   Palette pulled from her Brusly uniform: true athletic RED + night black pinstripes on
+   chalk white, with a GOLD accent (bedazzled paw ball). Infield-clay + spirit-pink kept
+   as minor tertiary pops. */
+:root {
+  /* Red — primary brand ramp */
+  --red-950: #4A0810;
+  --red-900: #6E0C18;
+  --red-800: #96101F;
+  --red-700: #B3162A;
+  --red-600: #CE1B2D; /* core red */
+  --red-500: #E23140;
+  --red-400: #EF5A66;
+  --red-300: #F49AA2;
+  --red-100: #FBD9DC;
+  --red-50:  #FDECEE;
+
+  /* Gold — accent (paw / bling ball, patch trim) */
+  --gold-700: #8A6410;
+  --gold-600: #B5851C;
+  --gold-500: #E0A82E;
+  --gold-300: #F3D27A;
+  --gold-100: #FBEFCB;
+
+  /* Clay — infield warm accent (tertiary) */
+  --clay-700: #93361A;
+  --clay-600: #B4431F;
+  --clay-500: #D2582E;
+  --clay-300: #E8A588;
+  --clay-100: #FBE3D8;
+
+  /* Spirit pink — minor pop, use sparingly */
+  --pink-600: #E63E86;
+  --pink-500: #FF5FA2;
+  --pink-100: #FFE0EE;
+
+  /* Ink / neutrals */
+  --ink-900: #0F1216; /* night black — pinstripes / trim */
+  --ink-800: #171B21;
+  --ink-700: #252B34;
+  --gray-600: #4B5563;
+  --gray-500: #6B7280;
+  --gray-400: #9AA3AF;
+  --gray-300: #CBD2DB;
+  --gray-200: #E4E8EE;
+  --gray-100: #F1F4F8;
+  --chalk:    #FFFFFF;
+  --field:    #F7F5F3; /* warm off-white page */
+
+  /* ---- Semantic aliases ---- */
+  --color-primary:        var(--red-600);
+  --color-primary-strong: var(--red-800);
+  --color-primary-soft:   var(--red-100);
+  --color-accent:         var(--gold-500);
+  --color-accent-strong:  var(--gold-700);
+  --color-warm:           var(--clay-500);
+  --color-spirit:         var(--pink-500);
+
+  --text-strong:   var(--ink-900);
+  --text-body:     var(--ink-700);
+  --text-muted:    var(--gray-500);
+  --text-inverse:  var(--chalk);
+  --text-on-primary: var(--chalk);
+
+  --surface-page:  var(--field);
+  --surface-card:  var(--chalk);
+  --surface-sunk:  var(--gray-100);
+  --surface-ink:   var(--ink-900);
+  --surface-royal: var(--red-600);
+
+  --border-subtle: var(--gray-200);
+  --border-hard:   var(--ink-900);
+  --border-royal:  var(--red-600);
+
+  --focus-ring:    var(--gold-500);
+}

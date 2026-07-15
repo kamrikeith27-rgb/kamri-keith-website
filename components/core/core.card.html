@@ -1,0 +1,38 @@
+<!-- @dsCard group="Components" viewport="700x360" name="Core — Buttons / Badges / Tags / Cards" subtitle="Actions, labels, surfaces" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);padding:24px;font-family:var(--font-body)}.grp{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}h4{font-family:var(--font-condensed);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--gray-500);margin:0 0 10px}</style></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { Button, Badge, Tag, Card } = window.KamriKeithDesignSystem_dba323;
+function Demo(){return(<>
+<h4>Buttons</h4>
+<div className="grp">
+<Button variant="primary" size="lg">Watch the tape</Button>
+<Button variant="accent" hard>Get in touch</Button>
+<Button variant="secondary">Schedule</Button>
+<Button variant="outline">Profile</Button>
+<Button variant="ghost">Stats</Button>
+</div>
+<h4>Badges &amp; Tags</h4>
+<div className="grp">
+<Badge tone="royal">Class of 2027</Badge>
+<Badge tone="accent">RHP</Badge>
+<Badge tone="ink">#5</Badge>
+<Badge tone="clay" soft>Uncommitted</Badge>
+<Tag active>Pitcher</Tag>
+<Tag dot>Rise ball</Tag>
+<Tag>Changeup</Tag>
+</div>
+<h4>Cards</h4>
+<div className="grp" style={{alignItems:'stretch'}}>
+<Card variant="plain" style={{flex:1}}><b>Plain</b><div style={{color:'var(--text-muted)',fontSize:14}}>Soft shadow surface</div></Card>
+<Card variant="hard" style={{flex:1}}><b>Hard</b><div style={{color:'var(--text-muted)',fontSize:14}}>Varsity offset shadow</div></Card>
+<Card variant="royal" style={{flex:1}}><b>Royal</b><div style={{opacity:.8,fontSize:14}}>Brand fill</div></Card>
+</div>
+</>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

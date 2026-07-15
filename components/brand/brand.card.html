@@ -1,0 +1,20 @@
+<!-- @dsCard group="Components" viewport="700x240" name="Brand — Number mark" subtitle="Jersey-number / monogram device" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-page);padding:30px 24px;font-family:var(--font-body)}.grp{display:flex;gap:26px;align-items:center;flex-wrap:wrap}</style></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { NumberMark } = window.KamriKeithDesignSystem_dba323;
+function Demo(){return(
+<div className="grp">
+<NumberMark value="5" tone="royal" size={110}/>
+<NumberMark value="K5" shape="plate" tone="ink" size={110}/>
+<NumberMark value="5" shape="shield" tone="accent" size={110}/>
+<NumberMark value="5" tone="outline" size={110}/>
+</div>
+);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>
