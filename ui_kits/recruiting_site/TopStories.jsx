@@ -16,7 +16,7 @@ function TopStories() {
           {/* featured */}
           <article style={{ border: '1px solid #e4e8ee' }}>
             <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden' }}>
-              <img src={'../../assets/photos/' + feat.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1) contrast(1.05)' }} />
+              <img src={'../../assets/photos/' + feat.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'grayscale(1) contrast(1.05)' }} />
               <div style={{ position: 'absolute', inset: 0, background: KK.red, mixBlendMode: 'color' }} />
               <span style={{ position: 'absolute', top: 16, left: 16, background: KK.red, color: '#fff', fontFamily: KK.head, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '.1em', fontSize: 11, padding: '5px 12px' }}>{feat.tag}</span>
             </div>

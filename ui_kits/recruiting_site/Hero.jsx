@@ -2,8 +2,8 @@
 function Hero({ onContact }) {
   const { KK, GLButton } = window;
   return (
-    <section id="home" style={{ position: 'relative', minHeight: 620, display: 'flex', alignItems: 'center', overflow: 'hidden', background: KK.ink }}>
-      <img src="../../assets/photos/portrait-red.jpg" alt="Kamri Keith" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '64% 16%' }} />
+    <section id="home" style={{ position: 'relative', height: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', background: KK.ink }}>
+      <img src="../../assets/photos/pitching-black-duo.jpg" alt="Kamri Keith" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(15,18,22,.94) 8%, rgba(15,18,22,.66) 40%, rgba(15,18,22,.15) 72%)' }} />
       <div style={{ position: 'relative', width: '100%', maxWidth: KK.wrap, margin: '0 auto', padding: '0 20px', color: '#fff' }}>
         <div style={{ maxWidth: 660 }}>
@@ -25,4 +25,6 @@ function Hero({ onContact }) {
     </section>
   );
 }
+window.Hero = Hero;
+window.Hero = Hero;
 window.Hero = Hero;

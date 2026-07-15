@@ -13,7 +13,7 @@ function Promos() {
         return (
           <div key={i} style={{ position: 'relative', minHeight: 320, display: 'flex', alignItems: 'center', overflow: 'hidden', background: b.kind === 'red' ? KK.red : b.kind === 'dark' ? KK.ink : KK.ink }}>
             {b.kind === 'img' && <>
-              <img src={'../../assets/photos/' + b.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={'../../assets/photos/' + b.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,18,22,.85), rgba(15,18,22,.2))' }} />
             </>}
             <div style={{ position: 'relative', padding: '0 40px', color: '#fff' }}>

@@ -3,7 +3,7 @@ function CTA({ onContact }) {
   const { KK, GLButton } = window;
   return (
     <section style={{ position: 'relative', background: KK.red, color: '#fff', overflow: 'hidden' }}>
-      <img src="../../assets/photos/turf-circle.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'multiply', opacity: .25 }} />
+      <img src="../../assets/photos/turf-circle.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply', opacity: .25 }} />
       <div style={{ position: 'relative', maxWidth: KK.wrap, margin: '0 auto', padding: '52px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap' }}>
         <div>
           <div style={{ fontFamily: KK.script, fontSize: 34, color: KK.gold, lineHeight: 1 }}>Uncommitted</div>

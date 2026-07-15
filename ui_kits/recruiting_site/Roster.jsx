@@ -14,7 +14,7 @@ function Roster() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 16 }}>
           {pitches.map((p, i) => (
             <div key={i} style={{ position: 'relative', aspectRatio: '3 / 4', overflow: 'hidden', cursor: 'pointer' }} className="kk-rostercard">
-              <img src={'../../assets/photos/' + p.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={'../../assets/photos/' + p.img} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,18,22,.9) 6%, rgba(15,18,22,.1) 55%)' }} />
               <span style={{ position: 'absolute', top: 14, right: 16, fontFamily: KK.head, fontWeight: 700, fontSize: 40, color: 'rgba(255,255,255,.28)', lineHeight: 1 }}>{p.no}</span>
               <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '20px', borderBottom: '4px solid ' + KK.red }}>
