@@ -2,10 +2,10 @@
 function Roster() {
   const { KK, GLButton, SectionHead } = window;
   const pitches = [
-    { img: 'kamri-catcher.jpg', name: 'Catcher', stat: 'Behind the plate', no: '01' },
-    { img: 'kamri-brusly-bat.jpg', name: 'Center Field', stat: 'Range & arm', no: '02' },
-    { img: 'kamri-brusly-portrait.jpg', name: 'Utility / Infield', stat: 'Anywhere needed', no: '03' },
-    { img: 'portrait-red.jpg', name: 'Slapper', stat: 'Speed & contact', no: '04' },
+    { img: 'kamri-catcher.webp', name: 'Catcher', stat: 'Behind the plate', no: '01' },
+    { img: 'kamri-brusly-bat.webp', name: 'Center Field', stat: 'Range & arm', no: '02' },
+    { img: 'kamri-brusly-portrait.webp', name: 'Utility / Infield', stat: 'Anywhere needed', no: '03' },
+    { img: 'portrait-red.webp', name: 'Slapper', stat: 'Speed & contact', no: '04' },
   ];
   return (
     <section id="roster" style={{ background: '#fff', padding: '90px 20px' }}>

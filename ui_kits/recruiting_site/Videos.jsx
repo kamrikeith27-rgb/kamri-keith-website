@@ -4,9 +4,9 @@ function Videos() {
   const CANVA = 'https://canva.link/kamrikeith2027cf';
   const DRIVE = 'https://drive.google.com/file/d/1V2Bce2uKxDWCza12MjjS2jA1n2_a2YCz/view';
   const vids = [
-    { img: 'portrait-red.jpg', title: 'Full Highlight Reel', date: 'Class of 2027', url: CANVA },
-    { img: 'kamri-catcher.jpg', title: 'Summer 2026 — Behind the Plate', date: 'Catcher', url: DRIVE },
-    { img: 'kamri-brusly-bat.jpg', title: 'Summer 2026 — CF Throw to Home', date: 'Center Field', url: DRIVE },
+    { img: 'portrait-red.webp', title: 'Full Highlight Reel', date: 'Class of 2027', url: CANVA },
+    { img: 'kamri-catcher.webp', title: 'Summer 2026 — Behind the Plate', date: 'Catcher', url: DRIVE },
+    { img: 'kamri-brusly-bat.webp', title: 'Summer 2026 — CF Throw to Home', date: 'Center Field', url: DRIVE },
   ];
   return (
     <section id="highlights" style={{ background: KK.ink, padding: '90px 20px' }}>

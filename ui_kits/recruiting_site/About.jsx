@@ -7,7 +7,7 @@ function About() {
     <section id="about" style={{ background: KK.ink, color: '#fff' }}>
       <div style={{ maxWidth: 1320, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(280px,1fr) minmax(320px,1.15fr)' }}>
         <div style={{ position: 'relative', minHeight: 480 }}>
-          <img src="../../assets/photos/kamri-catcher.jpg" alt="Kamri Keith catching" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
+          <img src="../../assets/photos/kamri-catcher.webp" alt="Kamri Keith catching" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(15,18,22,.1), rgba(15,18,22,.75))' }} />
         </div>
         <div style={{ padding: 'clamp(40px,6vw,72px)' }}>

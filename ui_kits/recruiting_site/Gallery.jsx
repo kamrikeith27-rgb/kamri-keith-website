@@ -1,7 +1,7 @@
 /* Recruiting site — BigSlam "From Instagram" full-bleed square grid. */
 function Gallery() {
   const { KK } = window;
-  const imgs = ['kamri-brusly-portrait.jpg', 'kamri-catcher.jpg', 'kamri-brusly-bat.jpg', 'kamri-catcher-dukes.jpg', 'portrait-red.jpg', 'kamri-catcher.jpg', 'kamri-brusly-bat.jpg', 'kamri-brusly-portrait.jpg'];
+  const imgs = ['kamri-brusly-portrait.webp', 'kamri-catcher.webp', 'kamri-brusly-bat.webp', 'kamri-catcher-dukes.webp', 'portrait-red.webp', 'kamri-catcher.webp', 'kamri-brusly-bat.webp', 'kamri-brusly-portrait.webp'];
   return (
     <section style={{ background: KK.ink }}>
       <div style={{ textAlign: 'center', padding: '54px 20px 30px' }}>
