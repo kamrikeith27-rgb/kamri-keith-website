@@ -1,6 +1,6 @@
 # Kamri Keith — Design System
 
-A personal athletic brand kit for **Kamri Keith**, a fastpitch softball pitcher (jersey **#5**). The system captures her on-field identity — the Brusly uniform: true athletic **red**, night-black pinstripes, and chalk white with a **gold** accent — and packages it for recruiting profiles, social graphics, and print.
+A personal athletic brand kit for **Kamri Keith**, a fastpitch softball utility player — catcher, center field, and infield (jersey **#00** for the Lady Dukes, **#9** for Brusly High). The system captures her on-field identity — the Brusly uniform: true athletic **red**, night-black pinstripes, and chalk white with a **gold** accent — and packages it for recruiting profiles, social graphics, and print.
 
 > **Use it for:** recruiting one-pagers & sites, game-day / commitment / stat-line social graphics, banners, flyers, and any Kamri-branded artifact.
 
@@ -10,17 +10,18 @@ A personal athletic brand kit for **Kamri Keith**, a fastpitch softball pitcher 
 
 This system was built **from a personal photo set only** — no logo, brand book, codebase, or Figma file was provided. The relevant source images (in `assets/photos/`, originals in `uploads/`):
 
-- **Brusly portrait** — red/white pinstripe uniform, red trim & socks, bedazzled gold paw ball (`portrait-red.jpg`) — the palette source of record.
-- Royal travel uniform, pitching — white "Dukes" script, #5 (`pitching-royal.jpg`)
-- Black alternate uniform, pitching (`pitching-black.jpg`)
+- **Brusly portrait** — red/white pinstripe uniform, red trim & socks, bedazzled gold paw ball (`portrait-red.jpg`) — Kamri, and the palette source of record.
+- Royal / black "Dukes" pitching shots (`pitching-royal.jpg`, `pitching-black.jpg`) — a **teammate** (jersey #5), not Kamri; retained only as generic action texture.
 - "Bayou Bandits" white uniform, fielding (`fielding-bandits.jpg`)
 - Turf field, on-deck / circle (`turf-circle.jpg`, `dugout.jpg`)
 
-Teams represented: **Brusly** (school — red/black/white, palette source) plus travel-ball **Dukes** and **Bayou Bandits**. Position: **pitcher**. Region: Louisiana. The brand palette follows the Brusly identity.
+> ⚠️ **Photo attribution:** the #5 "Dukes" pitching photos are a teammate, not Kamri. Kamri is **#00** (Lady Dukes) / **#9** (Brusly). Use the verified Kamri photos (`portrait-red`, `hero-kamri`, `kamri-catcher*`, `kamri-brusly-*`, `cutout-*`) for anything Kamri-branded.
+
+Teams represented: **Brusly High** (school — red/black/white, palette source) and travel-ball **Lady Dukes — Louisiana 16U**. Position: **utility** (catcher / center field / infield; also slapper and pinch runner). Region: Louisiana. The brand palette follows the Brusly identity.
 
 The remaining uploads (a Vietnam-veteran emblem, a firefighters-association letter, a food-truck menu, phone screenshots) are unrelated camera-roll images and were intentionally excluded from the brand.
 
-> ⚠️ **No logo exists.** The brand mark is a **type wordmark** ("KAMRI KEITH" in the display face) plus a **jersey-number device** (the "5" roundel / "K5" monogram) built in CSS type. Nothing was invented or drawn as a logo. If a real mark is created later, drop it in `assets/` and update `NumberMark` + the kits.
+> ⚠️ **No logo exists.** The brand mark is a **type wordmark** ("KAMRI KEITH" in the display face) plus a **jersey-number device** (the "00" roundel / "K00" monogram) built in CSS type. Nothing was invented or drawn as a logo. If a real mark is created later, drop it in `assets/` and update `NumberMark` + the kits.
 
 > ⚠️ **Fonts are chosen, not supplied.** Anton + Barlow (Google Fonts) were selected to match the athletic look. If official brand fonts are adopted, replace `tokens/fonts.css`.
 
@@ -31,14 +32,14 @@ The remaining uploads (a Vietnam-veteran emblem, a firefighters-association lett
 **Voice:** first-person and confident, but grounded — a recruit who lets the work speak. Short, punchy, active. Think dugout confidence, not hype-man.
 
 - **Casing:** display headlines and labels are **ALL CAPS** (jersey/scoreboard energy). Body copy is sentence case.
-- **Person:** "I" for bio/statements ("I compete every pitch."), "you" only when addressing coaches directly ("Let's talk — I'd love to compete for you.").
-- **Numbers are loud.** Stats, jersey #, class year, and velocity are hero content — set big, condensed, tabular. A stat without a label is incomplete: always pair `65 MPH` with `FASTBALL`.
+- **Person:** "I" for bio/statements ("I compete every play."), "you" only when addressing coaches directly ("Let's talk — I'd love to compete for you.").
+- **Numbers are loud.** Stats, jersey #, class year, and batting average are hero content — set big, condensed, tabular. A stat without a label is incomplete: always pair `.407` with `AVG`.
 - **Tone words:** relentless, coachable, competitor, clutch, work. Avoid clichés like "God-given talent" and over-punctuation.
 - **Emoji:** not used in the brand. (Camera-roll screenshots contained emoji; the brand does not.)
 - **Examples:**
-  - Eyebrow: `RHP · CLASS OF 2027 · #5`
-  - Headline: `COMPETE. EVERY. PITCH.`
-  - Stat: `1.82` / `ERA` — `12` / `K PER 7`
+  - Eyebrow: `UTILITY · CLASS OF 2027 · #00`
+  - Headline: `COMPETE. EVERY. PLAY.`
+  - Stat: `.407` / `AVG` — `1.000` / `FPCT`
   - CTA: `WATCH THE TAPE` · `GET IN TOUCH`
 
 ---
@@ -78,7 +79,7 @@ The remaining uploads (a Vietnam-veteran emblem, a firefighters-association lett
 
 - **No proprietary icon set or icon font exists** in the sources. The brand leans on **type, numerals, and photography** rather than decorative icons.
 - **Chosen system: [Lucide](https://lucide.dev)** (CDN) — clean 2px stroke, rounded caps, which matches the modern-athletic tone. Used minimally for UI affordances (arrows, play, mail, calendar, map-pin, chevrons) in the kits. **This is a substitution flagged for review** — swap if a preferred set is chosen.
-- **Softball glyphs** (ball, bat, diamond) should come from **photography or a real licensed mark**, not hand-drawn SVG. The one intentional brand *device* is the **jersey-number plate** (`#5` / `K5`), which is typographic, not an icon.
+- **Softball glyphs** (ball, bat, diamond) should come from **photography or a real licensed mark**, not hand-drawn SVG. The one intentional brand *device* is the **jersey-number plate** (`#00` / `K00`), which is typographic, not an icon.
 - **Emoji / unicode as icons:** not used.
 
 Load Lucide in a kit: `<script src="https://unpkg.com/lucide@latest"></script>` then `lucide.createIcons()`.
