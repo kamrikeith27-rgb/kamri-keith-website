@@ -13,13 +13,11 @@
   .kk-navlink{transition:color .18s ease}.kk-navlink:hover{color:var(--red-500)!important}
   .kk-rostercard img{transition:transform .4s ease}.kk-rostercard:hover img{transform:scale(1.05)}
   .kk-iggrid:hover img{transform:scale(1.06)}.kk-iggrid:hover .kk-igover{opacity:1!important}
+  header button[type="button"]{display:none}
+  header nav:first-of-type{display:flex}
   @media(max-width:768px){
     header nav:first-of-type{display:none!important}
-    header button{display:block!important}
-  }
-  @media(min-width:769px){
-    header button{display:none!important}
-    header nav:first-of-type{display:flex!important}
+    header button[type="button"]{display:block!important;margin-left:auto}
   }
 </style>
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
