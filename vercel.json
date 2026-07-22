@@ -1,9 +1,6 @@
 {
-  "name": "kamri-keith-website",
-  "version": 2,
   "buildCommand": "echo 'Static site - no build needed'",
   "outputDirectory": ".",
-  "public": true,
   "routes": [
     {
       "src": "/ui_kits/recruiting_site/(.*)",
@@ -15,10 +12,8 @@
     }
   ],
   "env": {},
-  "alias": ["kamri-keith.vercel.app"],
   "github": {
     "enabled": true,
-    "autoAlias": true,
-    "autoJobCancelPreviousOnPush": true
+    "autoAlias": true
   }
 }
