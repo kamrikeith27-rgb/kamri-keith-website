@@ -33,7 +33,7 @@ function SiteApp() {
   const ContactModal = window.ContactModal;
 
   return (
-    <div className="kk-scroll" style={{ height: '100vh', overflowY: 'auto', background: 'var(--field)' }}>
+    <div className="kk-scroll" style={{ height: '100vh', overflowY: 'auto', overflowX: 'hidden', background: 'var(--field)' }}>
       <TopBar />
       <Nav onContact={open} />
       <Hero onContact={open} />
