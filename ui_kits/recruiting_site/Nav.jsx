@@ -22,7 +22,7 @@ function Nav({ onContact }) {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="kk-desknav" style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
+        <nav className="kk-desknav" style={{ alignItems: 'center', gap: 28 }}>
           {links.map(([l, h]) => (
             <a key={l} href={h} className="kk-navlink" style={{ fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.11em', fontSize: 13.5, color: '#fff', textDecoration: 'none', transition: 'all .2s ease', cursor: 'pointer' }} onMouseOver={navLinkHover} onMouseOut={navLinkOut}>{l}</a>
           ))}
