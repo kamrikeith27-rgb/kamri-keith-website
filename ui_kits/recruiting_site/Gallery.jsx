@@ -3,7 +3,7 @@ function Gallery() {
   const { KK } = window;
   const imgs = [
     'kamri-dukes-portrait.jpg',
-    'kamri-catcher.webp',
+    'kamri-dukes-catcher-action.jpg',
     'kamri-dukes-action-batting.jpg',
     'kamri-brusly-bat.webp',
     'kamri-catcher-dukes.webp',
