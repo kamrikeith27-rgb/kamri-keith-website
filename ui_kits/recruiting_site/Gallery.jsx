@@ -10,7 +10,6 @@ function Gallery() {
     'kamri-catcher-dukes.webp',
     'portrait-red.webp',
     'kamri-dukes-catcher.png',
-    'kamri-brusly-portrait.webp',
   ];
   return (
     <section data-scroll-reveal style={{ background: KK.ink }}>
