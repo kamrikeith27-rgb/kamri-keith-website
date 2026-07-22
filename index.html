@@ -206,7 +206,7 @@
     <div class="kamri-split">
       <div data-reveal style="position:relative;">
         <div style="position:relative;border-radius:var(--radius-hero);overflow:hidden;border:1px solid var(--line-strong);box-shadow:var(--shadow-raised);">
-          <img src="/assets/photos/kamri-brusly-portrait.webp" alt="Portrait of Kamri Keith" style="display:block;width:100%;height:auto;filter:saturate(.95) contrast(1.03);">
+          <img src="/assets/photos/kamri-brusly-bat.webp" alt="Kamri Keith with bat" style="display:block;width:100%;height:auto;filter:saturate(.95) contrast(1.03);object-fit:cover;">
           <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,30,77,0) 55%, rgba(10,14,19,.35) 100%);"></div>
         </div>
         <span class="rs-display" style="position:absolute;left:-10px;bottom:-16px;display:grid;place-items:center;height:56px;width:56px;border-radius:var(--radius-sm);background:var(--accent);color:var(--sky-white);font-size:30px;box-shadow:var(--shadow-card);">00</span>
@@ -382,6 +382,69 @@
     </div>
   </div>
 </footer>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" style="position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;padding:20px;overflow:auto;backdrop-filter:blur(8px);">
+  <button id="lightbox-close" aria-label="Close lightbox" style="position:absolute;top:20px;right:20px;width:50px;height:50px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.3);border-radius:50%;cursor:pointer;font-size:28px;color:white;display:flex;align-items:center;justify-content:center;transition:all 200ms ease;z-index:101;">×</button>
+  <button id="lightbox-prev" aria-label="Previous image" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);width:50px;height:50px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.3);border-radius:50%;cursor:pointer;font-size:24px;color:white;display:flex;align-items:center;justify-content:center;transition:all 200ms ease;z-index:101;">‹</button>
+  <button id="lightbox-next" aria-label="Next image" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);width:50px;height:50px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.3);border-radius:50%;cursor:pointer;font-size:24px;color:white;display:flex;align-items:center;justify-content:center;transition:all 200ms ease;z-index:101;">›</button>
+  <img id="lightbox-image" src="" alt="Gallery image" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+</div>
+
+<script>
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+  const galleryItems = document.querySelectorAll('.rs-gallery-item');
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const src = galleryItems[index].getAttribute('data-src');
+    lightboxImage.src = src;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    const src = galleryItems[currentIndex].getAttribute('data-src');
+    lightboxImage.src = src;
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    const src = galleryItems[currentIndex].getAttribute('data-src');
+    lightboxImage.src = src;
+  }
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => openLightbox(index));
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', prevImage);
+  lightboxNext.addEventListener('click', nextImage);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display !== 'flex') return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+  });
+</script>
 
 <script src="app.js" defer></script>
 </body>
