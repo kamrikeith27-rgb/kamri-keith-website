@@ -7,7 +7,6 @@ function Gallery() {
     'kamri-dukes-batting.png',
     'kamri-brusly-bat.webp',
     'kamri-catcher-dukes.webp',
-    'portrait-red.webp',
     'kamri-dukes-catcher.png',
   ];
   return (
