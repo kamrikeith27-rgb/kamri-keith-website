@@ -6,8 +6,6 @@ function Gallery() {
     'kamri-gallery-2.png',
     'kamri-dukes-portrait.jpg',
     'kamri-dukes-action-batting.jpg',
-    'kamri-brusly-bat.webp',
-    'kamri-brusly-portrait.webp',
   ];
   
   const [lightboxOpen, setLightboxOpen] = React.useState(false);
