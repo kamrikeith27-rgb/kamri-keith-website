@@ -1,19 +1,4 @@
 {
   "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": ".",
-  "routes": [
-    {
-      "src": "/ui_kits/recruiting_site/(.*)",
-      "dest": "/ui_kits/recruiting_site/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  "env": {},
-  "github": {
-    "enabled": true,
-    "autoAlias": true
-  }
+  "outputDirectory": "."
 }
