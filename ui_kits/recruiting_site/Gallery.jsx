@@ -3,10 +3,10 @@ function Gallery() {
   const { KK } = window;
   const imgs = [
     'kamri-gallery-1.jpg',
-    'kamri-brusly-bat.webp',
+    'kamri-gallery-2.png',
     'kamri-dukes-portrait.jpg',
     'kamri-dukes-action-batting.jpg',
-    'kamri-dukes-catcher-action.jpg',
+    'kamri-brusly-bat.webp',
     'kamri-brusly-portrait.webp',
   ];
   
