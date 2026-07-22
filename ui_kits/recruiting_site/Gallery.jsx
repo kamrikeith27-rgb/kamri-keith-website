@@ -42,11 +42,11 @@ function Gallery() {
             <button
               key={i}
               onClick={() => openLightbox(i)}
-              data-gallery-item 
+              data-gallery-item
               style={{ position: 'relative', aspectRatio: '1 / 1', overflow: 'hidden', display: 'block', background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               className="kk-iggrid"
             >
-              <img src={'../../assets/photos/' + g} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform .35s ease' }} />
+              <img src={'../../assets/photos/' + g} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: i === 3 ? 'center 35%' : 'center', transition: 'transform .35s ease' }} />
               <span className="kk-igover" style={{ position: 'absolute', inset: 0, background: 'rgba(206,27,45,.65)', opacity: 0, transition: 'opacity .25s ease', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <span style={{ fontFamily: KK.head, fontWeight: 700, fontSize: 26, color: '#fff' }}>+</span>
               </span>
