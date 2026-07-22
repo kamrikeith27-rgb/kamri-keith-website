@@ -9,7 +9,7 @@ function Footer({ onContact }) {
   const flinkOut = (e) => { e.currentTarget.style.color = 'rgba(255,255,255,.66)'; e.currentTarget.style.textDecoration = 'none'; };
   const H = ({ children }) => <h4 style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.04em', fontSize: 18, color: '#fff', margin: '0 0 18px' }}>{children}</h4>;
   return (
-    <footer id="contact" style={{ background: '#0a0c0f', color: '#fff' }}>
+    <footer id="contact" style={{ width: '100%', background: '#0a0c0f', color: '#fff' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '64px 20px 44px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 40 }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
