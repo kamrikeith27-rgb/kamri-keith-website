@@ -2,7 +2,7 @@
 const { NumberMark } = window.KamriKeithDesignSystem_dba323;
 
 function Nav({ onContact }) {
-  const { KK } = window;
+  const { KK, GLButton } = window;
   const links = [['Home', '#home'], ['About', '#about'], ['Stats', '#stats'], ['Positions', '#roster'], ['Highlights', '#highlights']];
   return (
     <header style={{ position: 'sticky', top: 0, zIndex: 50, background: KK.ink, borderBottom: '4px solid ' + KK.red }}>
@@ -18,7 +18,7 @@ function Nav({ onContact }) {
           {links.map(([l, h]) => (
             <a key={l} href={h} className="kk-navlink" style={{ fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.11em', fontSize: 13.5, color: '#fff', textDecoration: 'none' }}>{l}</a>
           ))}
-          <window.GLButton variant="red" size="sm" onClick={onContact}>Recruit Me</window.GLButton>
+          <GLButton variant="red" size="sm" onClick={onContact}>Recruit Me</GLButton>
         </nav>
       </div>
     </header>
