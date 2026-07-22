@@ -2,7 +2,7 @@
 function CTA({ onContact }) {
   const { KK, GLButton } = window;
   return (
-    <section style={{ position: 'relative', background: KK.red, color: '#fff', overflow: 'hidden', minHeight: 340 }}>
+    <section style={{ position: 'relative', background: KK.red, color: '#fff', overflow: 'hidden', minHeight: 340, marginTop: 40 }}>
       <img src="../../assets/photos/kamri-cutout.png" alt="Kamri Keith" style={{ position: 'absolute', right: 'clamp(-30px, 4vw, 100px)', bottom: '-20px', height: 'auto', width: 'clamp(200px, 30vw, 350px)', objectFit: 'contain', objectPosition: 'bottom', filter: 'drop-shadow(-14px 0 26px rgba(15,18,22,.28))', pointerEvents: 'none' }} />
       <div style={{ position: 'relative', maxWidth: KK.wrap, margin: '0 auto', padding: '56px 20px', display: 'flex', alignItems: 'center', minHeight: 340 }}>
         <div style={{ maxWidth: 560 }}>
