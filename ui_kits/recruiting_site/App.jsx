@@ -4,10 +4,15 @@ function SiteApp() {
   const [ready, setReady] = React.useState(false);
 
   React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setReady(true);
-    }, 500);
-    return () => clearTimeout(timer);
+    const checkReady = () => {
+      const required = ['TopBar', 'Nav', 'Hero', 'About', 'StatsTable', 'Roster', 'Videos', 'Gallery', 'CTA', 'Footer', 'ContactModal'];
+      if (required.every(c => window[c])) {
+        setReady(true);
+      } else {
+        setTimeout(checkReady, 100);
+      }
+    };
+    checkReady();
   }, []);
 
   const open = (e) => { if (e && e.preventDefault) e.preventDefault(); setContactOpen(true); };
