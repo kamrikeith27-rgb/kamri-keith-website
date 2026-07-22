@@ -83,25 +83,6 @@ function Videos() {
             All
           </button>
           <button 
-            onClick={() => setActiveTab('pitching')}
-            style={{
-              fontFamily: KK.head,
-              fontWeight: 600,
-              fontSize: 13,
-              textTransform: 'uppercase',
-              letterSpacing: '.05em',
-              padding: '8px 16px',
-              border: 'none',
-              borderRadius: 4,
-              background: activeTab === 'pitching' ? KK.red : '#22262d',
-              color: activeTab === 'pitching' ? '#fff' : '#aaa',
-              cursor: 'pointer',
-              transition: 'all .2s ease'
-            }}
-          >
-            Pitching
-          </button>
-          <button 
             onClick={() => setActiveTab('hitting')}
             style={{
               fontFamily: KK.head,
