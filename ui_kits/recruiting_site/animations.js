@@ -40,60 +40,81 @@ function setupAllAnimations() {
 function setupHeroAnimations(gsap, ScrollTrigger) {
   const heroImg = document.querySelector('[data-hero-image]');
   const heroText = document.querySelector('[data-hero-text]');
-  
+
   if (heroText) {
-    // Hero text fade and slide up on load
+    // Hero text explosive entrance
     gsap.from(heroText, {
-      duration: 1,
+      duration: 1.5,
       opacity: 0,
-      y: 30,
-      ease: 'power3.out'
+      y: 80,
+      scale: 0.8,
+      rotationY: -30,
+      ease: 'back.out(1.5)',
+      delay: 0.2
     });
   }
 
   if (heroImg) {
-    // Hero image parallax on scroll
+    // Hero image aggressive parallax on scroll
     gsap.to(heroImg, {
       scrollTrigger: {
         trigger: heroImg,
         start: 'top center',
         end: 'bottom center',
-        scrub: 1,
+        scrub: 1.5,
         markers: false
       },
-      y: -100,
+      y: -200,
       ease: 'none'
     });
 
-    // Hero image fade on load
+    // Hero image explosive fade in with rotation
     gsap.from(heroImg, {
-      duration: 1.2,
+      duration: 1.8,
       opacity: 0,
-      scale: 1.05,
-      ease: 'power3.out',
-      delay: 0.2
+      scale: 1.15,
+      rotationZ: 2,
+      ease: 'power4.out',
+      delay: 0.1
     });
   }
 }
 
 function setupScrollReveals(gsap, ScrollTrigger) {
-  // Reveal all sections as they scroll into view
+  // Reveal all sections as they scroll into view with extreme animations
   const sections = document.querySelectorAll('[data-scroll-reveal]');
 
   sections.forEach((section, index) => {
     gsap.from(section, {
       scrollTrigger: {
         trigger: section,
-        start: 'top 85%',
-        end: 'top 45%',
-        scrub: false,
+        start: 'top 90%',
+        end: 'top 40%',
+        scrub: 0.5,
         markers: false
       },
-      duration: 1.2,
+      duration: 1.8,
       opacity: 0,
-      y: 80,
-      ease: 'power2.out',
-      delay: index * 0.15
+      y: 150,
+      rotationX: -15,
+      ease: 'power3.out',
+      stagger: 0.2,
+      delay: index * 0.1
+    });
+
+    // Add a scale animation for extra pop
+    gsap.from(section, {
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 90%',
+        end: 'top 40%',
+        scrub: 0.5,
+        markers: false
+      },
+      duration: 1.8,
+      scale: 0.85,
+      ease: 'power3.out',
+      delay: index * 0.1
     });
   });
 }
@@ -105,70 +126,92 @@ function setupNumberMarkAnimation(gsap) {
   const leftDigit = numberMark.querySelector('[data-digit-left]');
   const rightDigit = numberMark.querySelector('[data-digit-right]');
 
-  // Left digit scrolls up (0)
+  // Left digit flies in from top left
   if (leftDigit) {
     gsap.from(leftDigit, {
-      duration: 1.5,
-      y: 30,
+      duration: 2,
+      y: -100,
+      x: -100,
       opacity: 0,
-      ease: 'back.out(1.7)',
-      delay: 0.3
+      scale: 0.3,
+      rotationZ: -45,
+      ease: 'elastic.out(1.2, 0.8)',
+      delay: 0.2
     });
   }
 
-  // Right digit scrolls down (0)
+  // Right digit flies in from bottom right
   if (rightDigit) {
     gsap.from(rightDigit, {
-      duration: 1.5,
-      y: -30,
+      duration: 2,
+      y: 100,
+      x: 100,
       opacity: 0,
-      ease: 'back.out(1.7)',
-      delay: 0.3
+      scale: 0.3,
+      rotationZ: 45,
+      ease: 'elastic.out(1.2, 0.8)',
+      delay: 0.2
     });
   }
 }
 
 function setupVideoAnimations(gsap) {
   const videoThumbs = document.querySelectorAll('[data-video-thumb]');
-  
-  videoThumbs.forEach(thumb => {
+
+  videoThumbs.forEach((thumb, index) => {
+    // Entry animation for thumbnails
+    gsap.from(thumb, {
+      duration: 1,
+      opacity: 0,
+      scale: 0.6,
+      rotationY: 45,
+      ease: 'back.out(1.8)',
+      delay: index * 0.12
+    });
+
     const playBtn = thumb.querySelector('[data-play-btn]');
-    
+
     if (playBtn) {
-      // Play button scale on hover
+      // Aggressive play button animation
       thumb.addEventListener('mouseenter', () => {
         gsap.to(playBtn, {
-          duration: 0.3,
-          scale: 1.2,
-          ease: 'power2.out'
+          duration: 0.25,
+          scale: 1.4,
+          ease: 'back.out(2)',
+          boxShadow: '0 0 30px rgba(206,27,45,.6)',
+          overwrite: 'auto'
         });
       });
-      
+
       thumb.addEventListener('mouseleave', () => {
         gsap.to(playBtn, {
-          duration: 0.3,
+          duration: 0.25,
           scale: 1,
-          ease: 'power2.out'
+          ease: 'power2.out',
+          boxShadow: '0 0 0px rgba(206,27,45,0)',
+          overwrite: 'auto'
         });
       });
     }
 
-    // Thumbnail zoom on hover
+    // Thumbnail aggressive zoom on hover
     const img = thumb.querySelector('img');
     if (img) {
       thumb.addEventListener('mouseenter', () => {
         gsap.to(img, {
-          duration: 0.4,
-          scale: 1.08,
-          ease: 'power2.out'
+          duration: 0.3,
+          scale: 1.15,
+          ease: 'back.out(2)',
+          overwrite: 'auto'
         });
       });
-      
+
       thumb.addEventListener('mouseleave', () => {
         gsap.to(img, {
-          duration: 0.4,
+          duration: 0.3,
           scale: 1,
-          ease: 'power2.out'
+          ease: 'power2.out',
+          overwrite: 'auto'
         });
       });
     }
@@ -177,21 +220,23 @@ function setupVideoAnimations(gsap) {
 
 function setupStatAnimations(gsap, ScrollTrigger) {
   const statCards = document.querySelectorAll('[data-stat-card]');
-  
+
   statCards.forEach((card, index) => {
     gsap.from(card, {
       scrollTrigger: {
         trigger: card,
-        start: 'top 85%',
-        end: 'top 60%',
-        scrub: false,
+        start: 'top 88%',
+        end: 'top 55%',
+        scrub: 0.3,
         markers: false
       },
-      duration: 0.6,
+      duration: 1.2,
       opacity: 0,
-      y: 30,
-      ease: 'power3.out',
-      delay: index * 0.1
+      y: 100,
+      scale: 0.7,
+      rotationX: 25,
+      ease: 'back.out(1.5)',
+      delay: index * 0.15
     });
 
     // Count up numbers if present
@@ -261,37 +306,42 @@ function setupNavAnimations(gsap, ScrollTrigger) {
 
 function setupGalleryAnimations(gsap, ScrollTrigger) {
   const galleryImages = document.querySelectorAll('[data-gallery-item]');
-  
+
   galleryImages.forEach((img, index) => {
     gsap.from(img, {
       scrollTrigger: {
         trigger: img,
-        start: 'top 90%',
-        end: 'top 60%',
-        scrub: false,
+        start: 'top 95%',
+        end: 'top 55%',
+        scrub: 0.3,
         markers: false
       },
-      duration: 0.7,
+      duration: 1.2,
       opacity: 0,
-      scale: 0.95,
-      ease: 'power3.out',
-      delay: (index % 3) * 0.1
+      scale: 0.4,
+      rotationZ: 25,
+      ease: 'elastic.out(1.2, 0.8)',
+      delay: (index % 3) * 0.2
     });
 
-    // Hover effect
+    // Aggressive hover effect
     img.addEventListener('mouseenter', () => {
       gsap.to(img, {
-        duration: 0.4,
-        scale: 1.05,
-        ease: 'power2.out'
+        duration: 0.3,
+        scale: 1.15,
+        ease: 'back.out(2)',
+        boxShadow: '0 20px 60px rgba(206,27,45,.4)',
+        overwrite: 'auto'
       });
     });
-    
+
     img.addEventListener('mouseleave', () => {
       gsap.to(img, {
-        duration: 0.4,
+        duration: 0.3,
         scale: 1,
-        ease: 'power2.out'
+        ease: 'power2.out',
+        boxShadow: '0 2px 8px rgba(0,0,0,.1)',
+        overwrite: 'auto'
       });
     });
   });
@@ -302,21 +352,22 @@ function setupFooterAnimations(gsap, ScrollTrigger) {
   if (!footer) return;
 
   const footerChildren = footer.querySelectorAll('[data-footer-col]');
-  
+
   footerChildren.forEach((col, index) => {
     gsap.from(col, {
       scrollTrigger: {
         trigger: footer,
-        start: 'top 90%',
-        end: 'top 70%',
-        scrub: false,
+        start: 'top 95%',
+        end: 'top 65%',
+        scrub: 0.4,
         markers: false
       },
-      duration: 0.7,
+      duration: 1.2,
       opacity: 0,
-      y: 20,
-      ease: 'power3.out',
-      delay: index * 0.1
+      y: 80,
+      rotationX: 20,
+      ease: 'back.out(1.5)',
+      delay: index * 0.15
     });
   });
 }
