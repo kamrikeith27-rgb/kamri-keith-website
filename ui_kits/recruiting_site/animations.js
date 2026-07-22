@@ -32,7 +32,10 @@ function setupAllAnimations() {
   
   // Gallery animations
   setupGalleryAnimations(gsap);
-  
+
+  // CTA cutout animation
+  setupCTAAnimations(gsap, ScrollTrigger);
+
   // Footer animations
   setupFooterAnimations(gsap, ScrollTrigger);
 }
@@ -344,6 +347,27 @@ function setupGalleryAnimations(gsap, ScrollTrigger) {
         overwrite: 'auto'
       });
     });
+  });
+}
+
+function setupCTAAnimations(gsap, ScrollTrigger) {
+  const ctaCutout = document.querySelector('[data-cta-cutout]');
+  if (!ctaCutout) return;
+
+  gsap.from(ctaCutout, {
+    scrollTrigger: {
+      trigger: ctaCutout.parentElement,
+      start: 'top 85%',
+      end: 'top 50%',
+      scrub: 0.5,
+      markers: false
+    },
+    duration: 1.8,
+    opacity: 0,
+    x: 400,
+    scale: 0.5,
+    rotationZ: 45,
+    ease: 'back.out(1.8)'
   });
 }
 
