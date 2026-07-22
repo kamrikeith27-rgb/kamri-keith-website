@@ -2,19 +2,32 @@
 function SiteApp() {
   const [contactOpen, setContactOpen] = React.useState(false);
   const open = (e) => { if (e && e.preventDefault) e.preventDefault(); setContactOpen(true); };
+
+  const TopBar = window.TopBar;
+  const Nav = window.Nav;
+  const Hero = window.Hero;
+  const About = window.About;
+  const StatsTable = window.StatsTable;
+  const Roster = window.Roster;
+  const Videos = window.Videos;
+  const Gallery = window.Gallery;
+  const CTA = window.CTA;
+  const Footer = window.Footer;
+  const ContactModal = window.ContactModal;
+
   return (
     <div className="kk-scroll" style={{ height: '100vh', overflowY: 'auto', background: 'var(--field)' }}>
-      <window.TopBar />
-      <window.Nav onContact={open} />
-      <window.Hero onContact={open} />
-      <window.About />
-      <window.StatsTable />
-      <window.Roster />
-      <window.Videos />
-      <window.Gallery />
-      <window.CTA onContact={open} />
-      <window.Footer onContact={open} />
-      <window.ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
+      <TopBar />
+      <Nav onContact={open} />
+      <Hero onContact={open} />
+      <About />
+      <StatsTable />
+      <Roster />
+      <Videos />
+      <Gallery />
+      <CTA onContact={open} />
+      <Footer onContact={open} />
+      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </div>
   );
 }
