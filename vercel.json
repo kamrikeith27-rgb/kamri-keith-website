@@ -2,10 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
-      "source": "^(?!.*\\.).*$",
-      "destination": "/ui_kits/recruiting_site/index.html"
+      "source": "/",
+      "destination": "/ui_kits/recruiting_site/",
+      "permanent": false
     }
   ],
   "headers": [
