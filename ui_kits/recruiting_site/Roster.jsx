@@ -23,7 +23,7 @@ function Roster() {
   };
 
   return (
-    <section id="roster" data-scroll-reveal style={{ background: '#fff', padding: '90px 20px' }}>
+    <section id="roster" data-scroll-reveal style={{ background: '#f5f5f5', padding: '90px 20px' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto' }}>
         <SectionHead eyebrow="Where she plays" title="The Positions" action={<GLButton variant="outlineDark" size="sm" href="#stats">Full Profile</GLButton>} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 20 }}>
