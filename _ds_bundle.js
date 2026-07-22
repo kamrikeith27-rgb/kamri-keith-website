@@ -518,7 +518,7 @@ function About() {
       minHeight: 480
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/pitching-black-duo.jpg",
+    src: "../../assets/photos/kamri-catcher.webp",
     alt: "Kamri Keith",
     style: {
       position: 'absolute',
@@ -868,7 +868,7 @@ function CTA({
       overflow: 'hidden'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/turf-circle.jpg",
+    src: "../../assets/photos/kamri-catcher.webp",
     alt: "",
     style: {
       position: 'absolute',
@@ -1213,7 +1213,7 @@ function Gallery() {
   const {
     KK
   } = window;
-  const imgs = ['portrait-red.jpg', 'pitching-royal.jpg', 'fielding-bandits.jpg', 'dugout.jpg', 'pitching-black.jpg', 'turf-circle.jpg', 'portrait-red.jpg', 'fielding-bandits.jpg'];
+  const imgs = ['kamri-brusly-portrait.webp', 'kamri-catcher.webp', 'fielding-bandits.jpg', 'kamri-catcher.webp', 'kamri-catcher.webp', 'kamri-catcher.webp', 'kamri-brusly-portrait.webp', 'fielding-bandits.jpg'];
   return /*#__PURE__*/React.createElement("section", {
     style: {
       background: KK.ink
@@ -1320,7 +1320,7 @@ function Hero({
       background: KK.ink
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/portrait-red.jpg",
+    src: "../../assets/photos/kamri-brusly-portrait.webp",
     alt: "Kamri Keith",
     style: {
       position: 'absolute',
@@ -1521,7 +1521,7 @@ function Promos() {
   } = window;
   const boxes = [{
     kind: 'img',
-    img: 'pitching-royal-duo.jpg',
+    img: 'kamri-catcher.webp',
     eyebrow: 'In the circle',
     title: 'Highlight\nReel',
     cta: 'Watch Now',
@@ -1769,17 +1769,17 @@ function Roster() {
     SectionHead
   } = window;
   const pitches = [{
-    img: 'pitching-royal-duo.jpg',
+    img: 'kamri-catcher.webp',
     name: 'Fastball',
     stat: '65 MPH',
     no: '01'
   }, {
-    img: 'pitching-black-duo.jpg',
+    img: 'kamri-catcher.webp',
     name: 'Rise Ball',
     stat: '1900 RPM',
     no: '02'
   }, {
-    img: 'portrait-red.jpg',
+    img: 'kamri-brusly-portrait.webp',
     name: 'Drop Ball',
     stat: 'Late Break',
     no: '03'
@@ -2825,11 +2825,11 @@ function Videos() {
     SectionHead
   } = window;
   const vids = [{
-    img: 'pitching-royal-duo.jpg',
+    img: 'kamri-catcher.webp',
     title: 'Rise Ball — 3K Inning',
     date: 'April 2, 2026'
   }, {
-    img: 'pitching-black-duo.jpg',
+    img: 'kamri-catcher.webp',
     title: 'Bullpen: Velo + Spin',
     date: 'March 2026'
   }, {
@@ -2964,7 +2964,7 @@ function GameDay() {
       background: 'var(--ink-900)'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/pitching-royal.jpg",
+    src: "../../assets/photos/kamri-catcher.webp",
     alt: "",
     style: {
       position: 'absolute',
@@ -3194,7 +3194,7 @@ function Spotlight() {
       background: 'var(--red-600)'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/portrait-red.jpg",
+    src: "../../assets/photos/kamri-brusly-portrait.webp",
     alt: "",
     style: {
       position: 'absolute',
@@ -3319,7 +3319,7 @@ function StatHighlight() {
       borderRight: '8px solid var(--gold-500)'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/photos/pitching-black.jpg",
+    src: "../../assets/photos/kamri-catcher.webp",
     alt: "",
     style: {
       width: '100%',
