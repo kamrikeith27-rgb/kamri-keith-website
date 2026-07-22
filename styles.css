@@ -1,9 +1,7 @@
 /* ============================================================================
-   Skye Hebert — Recruit Spotlight · standalone stylesheet
-   Ported 1:1 from the Claude Design "Recruit Spotlight" design system
-   (tokens: colors / typography / spacing / effects / base). Dark-first
-   athletic palette from her Lady Dukes uniform. Blue is an accent, never a
-   flood. All values preserved from the source design system.
+   Kamri Keith — Recruit Spotlight · standalone stylesheet
+   Ported from the Skye Hebert design system with Kamri's brand palette.
+   Dark-first athletic palette with red and gold accents.
    ============================================================================ */
 
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap");
@@ -15,9 +13,9 @@
   --sky-jet-raised: #1e2532;
   --sky-jet-inset: #0e121a;
 
-  --sky-royal: #1d4ed8;
-  --sky-electric: #3b82f6;
-  --sky-navy: #0a1e4d;
+  --sky-royal: #ce1b2d;
+  --sky-electric: #ff3344;
+  --sky-navy: #8b0000;
 
   --sky-white: #ffffff;
   --sky-fog: #e5e9f0;
@@ -26,6 +24,9 @@
 
   --sky-line: rgba(229, 233, 240, 0.10);
   --sky-line-strong: rgba(229, 233, 240, 0.18);
+
+  /* ---- Kamri accent (gold) ---- */
+  --kamri-gold: #d4af37;
 
   /* ---- Semantic surfaces ---- */
   --surface-page: var(--sky-ink);
@@ -51,8 +52,8 @@
   --focus-ring: rgba(29, 78, 216, 0.45);
 
   /* ---- Gradients ---- */
-  --gradient-brand: linear-gradient(135deg, #0a1e4d 0%, #1d4ed8 55%, #3b82f6 100%);
-  --gradient-line: linear-gradient(90deg, var(--sky-royal), var(--sky-electric));
+  --gradient-brand: linear-gradient(135deg, #8b0000 0%, #ce1b2d 55%, #ff3344 100%);
+  --gradient-line: linear-gradient(90deg, var(--sky-royal), var(--kamri-gold));
   --overlay-photo: linear-gradient(to top, rgba(10, 14, 19, 0.92) 0%, rgba(10, 14, 19, 0.35) 45%, rgba(10, 14, 19, 0) 75%);
 
   /* ---- Fonts ---- */
