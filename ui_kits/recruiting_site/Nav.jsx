@@ -22,7 +22,7 @@ function Nav({ onContact }) {
         </a>
 
         {/* Desktop Nav */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
+        <nav className="kk-desknav" style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
           {links.map(([l, h]) => (
             <a key={l} href={h} className="kk-navlink" style={{ fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.11em', fontSize: 13.5, color: '#fff', textDecoration: 'none', transition: 'all .2s ease', cursor: 'pointer' }} onMouseOver={navLinkHover} onMouseOut={navLinkOut}>{l}</a>
           ))}
@@ -30,7 +30,7 @@ function Nav({ onContact }) {
         </nav>
 
         {/* Mobile Hamburger Button */}
-        <button onClick={() => setMobileOpen(!mobileOpen)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '8px', color: '#fff', zIndex: 51 }}>
+        <button className="kk-hambtn" onClick={() => setMobileOpen(!mobileOpen)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '8px', color: '#fff', zIndex: 51 }}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="12" x2="21" y2="12" />
