@@ -1,20 +1,11 @@
 /* GSAP animations for Kamri Keith recruiting site */
 
 function initAnimations() {
-  // Load GSAP and plugins
-  const gsapScript = document.createElement('script');
-  gsapScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
-  gsapScript.onload = function() {
-    // Load ScrollTrigger plugin
-    const scrollTriggerScript = document.createElement('script');
-    scrollTriggerScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js';
-    scrollTriggerScript.onload = function() {
-      gsap.registerPlugin(ScrollTrigger);
-      setupAllAnimations();
-    };
-    document.head.appendChild(scrollTriggerScript);
-  };
-  document.head.appendChild(gsapScript);
+  // GSAP is already loaded in HTML, just register ScrollTrigger and start animations
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    setupAllAnimations();
+  }
 }
 
 function setupAllAnimations() {
