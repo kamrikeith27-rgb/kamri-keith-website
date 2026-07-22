@@ -241,10 +241,11 @@ img { max-width: 100%; }
 /* ---- Page-specific layout (ported from the .dc.html <style>) ---- */
 section[id] { scroll-margin-top: 84px; }
 @keyframes skyeBounce { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(8px);} }
-.kamri-bounce { animation: skyeBounce 1.9s ease-in-out infinite; }
-.kamri-desktop { display:flex; }
-.kamri-hamburger { display:none; }
-@media (max-width: 880px){ .kamri-desktop{ display:none; } .kamri-hamburger{ display:inline-flex; } }
+@keyframes kamriBounce { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(8px);} }
+.kamri-bounce { animation: kamriBounce 1.9s ease-in-out infinite; }
+.kamri-desktop { display:flex !important; }
+.kamri-hamburger { display:none !important; }
+@media (max-width: 880px){ .kamri-desktop{ display:none !important; } .kamri-hamburger{ display:inline-flex !important; } }
 .kamri-split { display:grid; gap: clamp(28px,4vw,60px); grid-template-columns: minmax(0,400px) minmax(0,1fr); align-items:center; }
 @media (max-width: 860px){ .kamri-split{ grid-template-columns: 1fr; } }
 .kamri-formsplit { display:grid; gap: clamp(28px,4vw,60px); grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); align-items:start; }
