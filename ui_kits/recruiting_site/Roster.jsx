@@ -4,8 +4,7 @@ function Roster() {
   const pitches = [
     { img: 'kamri-catcher.webp', name: 'Catcher', stat: 'Behind the plate', no: '01' },
     { img: 'kamri-brusly-bat.webp', name: 'Center Field', stat: 'Range & arm', no: '02' },
-    { img: 'kamri-brusly-portrait.webp', name: 'Utility / Infield', stat: 'Anywhere needed', no: '03' },
-    { img: 'kamri-catcher-dukes.webp', name: 'Slapper', stat: 'Speed & contact', no: '04' },
+    { img: 'kamri-catcher-dukes.webp', name: 'Slapper', stat: 'Speed & contact', no: '03' },
   ];
 
   const handleCardHover = (e, isHover) => {
@@ -23,9 +22,9 @@ function Roster() {
   };
 
   return (
-    <section id="roster" data-scroll-reveal style={{ background: '#f5f5f5', padding: '90px 20px' }}>
+    <section id="roster" data-scroll-reveal style={{ background: '#000000', padding: '90px 20px' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto' }}>
-        <SectionHead eyebrow="Where she plays" title="The Positions" action={<GLButton variant="outlineDark" size="sm" href="#stats">Full Profile</GLButton>} />
+        <SectionHead light eyebrow="Where she plays" title="The Positions" action={<GLButton variant="outline" size="sm" href="#stats">Full Profile</GLButton>} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 20 }}>
           {pitches.map((p, i) => (
             <div key={i} 

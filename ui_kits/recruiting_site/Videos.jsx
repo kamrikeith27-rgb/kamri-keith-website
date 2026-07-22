@@ -6,7 +6,7 @@ function Videos() {
   const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@kamrikeithsoftball2027';
   
   const CURATED_CLIPS = [
-    {id: 'pfjTUmJ85aw', label: 'LF Catch & Throw · Runner Out at Home', cat: 'fielding'},
+    {id: 'pfjTUmJ85aw', label: 'Accuracy · LF OUT · Throw to Home', cat: 'fielding'},
     {id: 'jZaxHvxY3a0', label: 'Left Field Catch · Defensive Highlight', cat: 'fielding'},
     {id: 'iW2b-lrrvI8', label: 'LF Catch & Throw · Outfield Defense', cat: 'fielding'},
   ];
