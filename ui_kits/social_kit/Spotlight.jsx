@@ -4,7 +4,7 @@ const { Badge, StatCard, NumberMark } = window.KamriKeithDesignSystem_dba323;
 function Spotlight() {
   return (
     <div style={{ width: 1080, height: 1080, position: 'relative', overflow: 'hidden', background: 'var(--red-600)' }}>
-      <img src="../../assets/photos/portrait-red.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'luminosity', opacity: .28 }} />
+      <img src="../../assets/photos/portrait-red.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'luminosity', opacity: .28 }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(12,42,138,.55), rgba(15,18,22,.85))' }} />
       <div style={{ position: 'relative', padding: 68, height: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>

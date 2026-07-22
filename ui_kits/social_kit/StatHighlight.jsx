@@ -5,7 +5,7 @@ function StatHighlight() {
   return (
     <div style={{ width: 1080, height: 1080, display: 'flex', background: 'var(--field)' }}>
       <div style={{ width: 460, position: 'relative', overflow: 'hidden', borderRight: '8px solid var(--gold-500)' }}>
-        <img src="../../assets/photos/pitching-black.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 25%', filter: 'grayscale(1) contrast(1.05)' }} />
+        <img src="../../assets/photos/pitching-black.webp" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 25%', filter: 'grayscale(1) contrast(1.05)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'var(--red-600)', mixBlendMode: 'color' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,18,22,.6), rgba(15,18,22,0) 45%)' }} />
         <div style={{ position: 'absolute', left: 32, bottom: 32 }}><NumberMark value="5" tone="accent" size={96} /></div>

@@ -4,7 +4,7 @@ const { Badge, NumberMark } = window.KamriKeithDesignSystem_dba323;
 function GameDay() {
   return (
     <div style={{ width: 1080, height: 1080, position: 'relative', overflow: 'hidden', background: 'var(--ink-900)' }}>
-      <img src="../../assets/photos/pitching-royal.jpg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%', filter: 'grayscale(1) contrast(1.05)' }} />
+      <img src="../../assets/photos/pitching-royal.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%', filter: 'grayscale(1) contrast(1.05)' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'var(--red-600)', mixBlendMode: 'color' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,18,22,.96) 22%, rgba(150,16,31,.35) 60%, rgba(15,18,22,.55))' }} />
       <div style={{ position: 'absolute', top: 56, left: 56, display: 'flex', alignItems: 'center', gap: 18 }}>

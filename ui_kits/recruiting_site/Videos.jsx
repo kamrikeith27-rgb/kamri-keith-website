@@ -19,7 +19,7 @@ function Videos() {
     : CURATED_CLIPS.filter(c => c.cat === activeTab);
   
   function ytThumbnail(id) {
-    return 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+    return 'https://i.ytimg.com/vi/' + id + '/hqdefault.webp';
   }
   
   function handleClipClick(clip) {
