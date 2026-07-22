@@ -1,8 +1,9 @@
-/* Recruiting site — BigSlam multi-column dark footer. */
+/* Recruiting site — Footer with dynamic copyright and BlakSheep Creative credit. */
 const { NumberMark } = window.KamriKeithDesignSystem_dba323;
 
 function Footer({ onContact }) {
   const { KK, GLButton } = window;
+  const currentYear = new Date().getFullYear();
   const flink = { fontFamily: KK.body, fontSize: 14.5, color: 'rgba(255,255,255,.66)', textDecoration: 'none', lineHeight: 1.9 };
   const H = ({ children }) => <h4 style={{ fontFamily: KK.head, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.04em', fontSize: 18, color: '#fff', margin: '0 0 18px' }}>{children}</h4>;
   return (
@@ -41,9 +42,11 @@ function Footer({ onContact }) {
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(255,255,255,.1)' }}>
-        <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '20px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10, fontFamily: KK.head, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '.08em', fontSize: 11.5, color: 'rgba(255,255,255,.5)' }}>
-          <span>© 2026 Kamri Keith. All Rights Reserved.</span>
-          <span>Utility · #00 · Brusly, LA</span>
+        <div style={{ maxWidth: KK.wrap, margin: '0 auto', padding: '20px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16, alignItems: 'center', fontSize: 12, color: 'rgba(255,255,255,.5)' }}>
+          <span>© {currentYear} · Kamri Keith</span>
+          <a href="https://blaksheepcreative.com/services/recruit-spotlight/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,.5)', transition: 'color .2s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'rgba(255,255,255,.8)'} onMouseOut={(e) => e.currentTarget.style.color = 'rgba(255,255,255,.5)'}>
+            <span>Powered by BlakSheep Creative</span>
+          </a>
         </div>
       </div>
     </footer>
