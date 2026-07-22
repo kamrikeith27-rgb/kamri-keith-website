@@ -6,7 +6,7 @@ function Gallery() {
     'kamri-gallery-2.png',
     'kamri-brusly-bat.webp',
     'kamri-dukes-portrait.jpg',
-    'kamri-brusly-portrait.webp',
+    'kamri-dukes-action-batting.jpg',
     'portrait-red.webp',
   ];
   
