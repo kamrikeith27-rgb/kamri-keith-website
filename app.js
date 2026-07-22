@@ -73,6 +73,12 @@
   var counts = $$("[data-count]");
   var ios = [];
 
+  // Check if GSAP and ScrollTrigger are available
+  var hasGSAP = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  if (hasGSAP) {
+    gsap.registerPlugin(ScrollTrigger);
+  }
+
   if (reduce) {
     counts.forEach(runCount);
     heroFades.forEach(function (el) { el.style.opacity = "1"; });
@@ -413,9 +419,132 @@
     });
     requestAnimationFrame(function () { ST.refresh(); });
   }
+  /* ---- Enhanced scroll animations with GSAP ---- */
+  function initScrollAnimations() {
+    if (!hasGSAP) return;
+
+    // Sections fade in with scale
+    $$("section").forEach(function (section, idx) {
+      gsap.fromTo(section,
+        { opacity: 0, scale: 0.95 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: EASE,
+          scrollTrigger: {
+            trigger: section,
+            start: "top 75%",
+            once: true
+          }
+        }
+      );
+    });
+
+    // Elements slide in from left
+    $$("[data-reveal]").forEach(function (el) {
+      gsap.fromTo(el,
+        { opacity: 0, x: -60 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.9,
+          ease: EASE,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            once: true
+          }
+        }
+      );
+    });
+
+    // Staggered children slide up
+    $$("[data-stagger]").forEach(function (parent) {
+      Array.prototype.forEach.call(parent.children, function (child, i) {
+        gsap.fromTo(child,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            ease: EASE,
+            delay: i * 0.12,
+            scrollTrigger: {
+              trigger: parent,
+              start: "top 75%",
+              once: true
+            }
+          }
+        );
+      });
+    });
+
+    // Gallery items rotate and scale in
+    $$(".rs-gallery-item").forEach(function (item, idx) {
+      gsap.fromTo(item,
+        { opacity: 0, scale: 0.8, rotation: -8 + (idx % 3) * 4 },
+        {
+          opacity: 1,
+          scale: 1,
+          rotation: 0,
+          duration: 0.8,
+          ease: EASE,
+          delay: idx * 0.08,
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+            once: true
+          }
+        }
+      );
+    });
+
+    // Position cards slide in from bottom with lift
+    $$(".rs-card").forEach(function (card, idx) {
+      gsap.fromTo(card,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: EASE,
+          delay: idx * 0.1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            once: true
+          }
+        }
+      );
+    });
+
+    // Headings scale up and fade in
+    $$("h1, h2, h3").forEach(function (heading) {
+      if (heading.classList.contains("kamri-line")) return; // Skip already animated
+      gsap.fromTo(heading,
+        { opacity: 0, scale: 0.85 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          ease: EASE,
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 80%",
+            once: true
+          }
+        }
+      );
+    });
+  }
+
   var tries = 50;
   (function waitG() {
-    if (window.gsap && window.ScrollTrigger) initParallax();
+    if (window.gsap && window.ScrollTrigger) {
+      initScrollAnimations();
+      initParallax();
+    }
     else if (tries-- > 0) setTimeout(waitG, 60);
   })();
 })();
