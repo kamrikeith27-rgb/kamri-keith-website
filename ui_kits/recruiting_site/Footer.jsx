@@ -37,7 +37,7 @@ function Footer({ onContact }) {
         <div>
           <H>Recruiting</H>
           <div style={{ fontFamily: KK.body, fontSize: 14.5, color: 'rgba(255,255,255,.66)', lineHeight: 1.9 }}>
-            Position — Utility · C / CF / IF<br />Grad Year — 2027<br />GPA — 3.87 · ACT 19<br />Bats / Throws — R / R<br />Club Coach — Jennifer Sibley
+            Position — Utility · C / CF / IF<br />Grad Year — 2027<br />GPA — 3.87 · ACT 19<br />Bats / Throws — R / R
           </div>
         </div>
       </div>
