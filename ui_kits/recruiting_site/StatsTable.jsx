@@ -86,8 +86,6 @@ function StatBlock({ title, rows }) {
 function StatsTable() {
   return (
     <section id="stats" data-scroll-reveal style={{ position: 'relative', background: 'var(--field)', padding: '84px 24px', overflow: 'hidden' }}>
-      {/* isolated cutout accent, bleeding off the bottom-right */}
-      <img src="../../assets/photos/cutout-bat.webp" alt="" style={{ position: 'absolute', right: 'clamp(-120px, -6vw, -40px)', bottom: 0, width: 'min(48%, 560px)', height: 'auto', objectFit: 'contain', opacity: .16, pointerEvents: 'none' }} />
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 1000, margin: '0 auto' }}>
         <SectionHead eyebrow="By the numbers" title="The Stat Line"
           action={<Button as="a" href="#contact" variant="outline" size="sm">Full Profile</Button>} />
