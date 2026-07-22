@@ -621,7 +621,8 @@ function SiteApp() {
     onClose: () => setContactOpen(false)
   }));
 }
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(SiteApp, null));
+// Render call moved to App.jsx to ensure all components are loaded first
+// ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(SiteApp, null));
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/recruiting_site/App.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/recruiting_site/Bits.jsx
