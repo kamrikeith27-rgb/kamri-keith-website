@@ -1,11 +1,4 @@
 {
   "cleanUrls": true,
-  "headers": [
-    {
-      "source": "/ui_kits/recruiting_site/(.*)\\.jsx$",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
-      ]
-    }
-  ]
+  "trailingSlash": false
 }

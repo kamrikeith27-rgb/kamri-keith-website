@@ -1,0 +1,99 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║        KAMRI KEITH SOFTBALL | CLASS OF 2027 — PLAYLISTS AT A GLANCE       ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌─ PLAYLIST 1: HITTING ────────────────────────────────────────────────────┐
+│                                                                            │
+│  📂 Playlist Name:     Hitting                                             │
+│  📋 Description:      Showcase Kamri's batting skills, plate discipline,   │
+│                       and hitting performance.                            │
+│  🎬 Videos (1):                                                            │
+│                                                                            │
+│    1️⃣  Kamri Keith 2027 #00 Bunt | Utility Highlights | Softball          │
+│        (File: 2026-03-16-kamri-keith-27-bunt-play.mp4)                    │
+│                                                                            │
+│  👥 Best For:         Recruiters evaluating offensive skills              │
+│  📄 Setup File:       Playlist-Hitting.docx                                │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PLAYLIST 2: FIELDING ───────────────────────────────────────────────────┐
+│                                                                            │
+│  📂 Playlist Name:     Fielding                                            │
+│  📋 Description:      Defense and outfield highlights. Featuring catches,  │
+│                       range, positioning, and outfield throws.            │
+│  🎬 Videos (2):                                                            │
+│                                                                            │
+│    1️⃣  Kamri Keith 2027 #00 Left Field Catch | Defensive Highlight | Sft  │
+│        (File: 2026-03-16-kamri-keith-27-lf-catch.mp4)                     │
+│                                                                            │
+│    2️⃣  Kamri Keith 2027 #00 LF Catch & Throw | Outfield Defense | Soft    │
+│        (File: 2026-03-16-kamri-keith-27-lf-catch-throw-home.mp4)          │
+│                                                                            │
+│  👥 Best For:         Recruiters evaluating defensive skills              │
+│  📄 Setup File:       Playlist-Fielding.docx                               │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PLAYLIST 3: UTILITY HIGHLIGHTS ────────────────────────────────────────┐
+│                                                                            │
+│  📂 Playlist Name:     Utility Highlights                                  │
+│  📋 Description:      All-around highlights showcasing Kamri's versatility │
+│                       across catcher, center field, and infield.          │
+│  🎬 Videos (3):                                                            │
+│                                                                            │
+│    1️⃣  Kamri Keith 2027 #00 Bunt | Utility Highlights | Softball          │
+│        (File: 2026-03-16-kamri-keith-27-bunt-play.mp4)                    │
+│                                                                            │
+│    2️⃣  Kamri Keith 2027 #00 Left Field Catch | Defensive Highlight | Sft  │
+│        (File: 2026-03-16-kamri-keith-27-lf-catch.mp4)                     │
+│                                                                            │
+│    3️⃣  Kamri Keith 2027 #00 LF Catch & Throw | Outfield Defense | Soft    │
+│        (File: 2026-03-16-kamri-keith-27-lf-catch-throw-home.mp4)          │
+│                                                                            │
+│  👥 Best For:         Primary/main playlist for first impression           │
+│  📄 Setup File:       Playlist-Utility-Highlights.docx                     │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          QUICK SETUP CHECKLIST                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+□ Open Playlist-Hitting.docx → Follow instructions → Create playlist
+□ Open Playlist-Fielding.docx → Follow instructions → Create playlist
+□ Open Playlist-Utility-Highlights.docx → Follow instructions → Create playlist
+
+Or use: PLAYLIST-MASTER-GUIDE.docx for all playlists in one document
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         VIDEO → PLAYLIST MAPPING                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Video 1 (BUNT):
+  ├─ Hitting ✓
+  └─ Utility Highlights ✓
+
+Video 2 (LF CATCH):
+  ├─ Fielding ✓
+  └─ Utility Highlights ✓
+
+Video 3 (LF CATCH & THROW):
+  ├─ Fielding ✓
+  └─ Utility Highlights ✓
+
+Note: Videos can appear in multiple playlists. This helps viewers find
+      content by skill type while showcasing overall versatility.
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                             FILES INCLUDED                                ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📄 PLAYLIST-MASTER-GUIDE.docx ........ All playlists in one document
+📄 Playlist-Hitting.docx ............ Hitting playlist setup
+📄 Playlist-Fielding.docx ........... Fielding playlist setup
+📄 Playlist-Utility-Highlights.docx . Utility playlist setup
+📄 PLAYLISTS-SUMMARY.txt ........... Text version of this guide
+📄 PLAYLISTS-AT-A-GLANCE.txt ....... Quick visual reference (this file)
+
+════════════════════════════════════════════════════════════════════════════════
