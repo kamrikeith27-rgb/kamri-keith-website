@@ -6,7 +6,8 @@ function SiteApp() {
   React.useEffect(() => {
     const checkReady = () => {
       const required = ['TopBar', 'Nav', 'Hero', 'About', 'StatsTable', 'Roster', 'Videos', 'Gallery', 'CTA', 'Footer', 'ContactModal'];
-      if (required.every(c => window[c])) {
+      const dsReady = window.KamriKeithDesignSystem_dba323 && window.KamriKeithDesignSystem_dba323.NumberMark;
+      if (dsReady && required.every(c => window[c])) {
         setReady(true);
       } else {
         setTimeout(checkReady, 100);
