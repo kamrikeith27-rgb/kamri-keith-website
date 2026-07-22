@@ -1,6 +1,8 @@
 /* Recruiting site — BigSlam "Featured Videos" with YouTube embeds + category tabs. */
 function Videos() {
-  const { KK, GLButton, SectionHead } = window;
+  const KK = window.KK || {};
+  const GLButton = window.GLButton || (() => null);
+  const SectionHead = window.SectionHead || (() => null);
   const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@kamrikeithsoftball2027';
   
   const CURATED_CLIPS = [

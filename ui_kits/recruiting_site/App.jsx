@@ -4,7 +4,10 @@ function SiteApp() {
   const [ready, setReady] = React.useState(false);
 
   React.useEffect(() => {
-    setReady(true);
+    const timer = setTimeout(() => {
+      setReady(true);
+    }, 500);
+    return () => clearTimeout(timer);
   }, []);
 
   const open = (e) => { if (e && e.preventDefault) e.preventDefault(); setContactOpen(true); };
