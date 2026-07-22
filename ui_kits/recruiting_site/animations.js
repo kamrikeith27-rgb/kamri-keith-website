@@ -88,21 +88,21 @@ function setupHeroAnimations(gsap, ScrollTrigger) {
 function setupScrollReveals(gsap, ScrollTrigger) {
   // Reveal all sections as they scroll into view
   const sections = document.querySelectorAll('[data-scroll-reveal]');
-  
+
   sections.forEach((section, index) => {
     gsap.from(section, {
       scrollTrigger: {
         trigger: section,
-        start: 'top 80%',
-        end: 'top 50%',
+        start: 'top 85%',
+        end: 'top 45%',
         scrub: false,
         markers: false
       },
-      duration: 0.8,
+      duration: 1.2,
       opacity: 0,
-      y: 40,
-      ease: 'power3.out',
-      delay: index * 0.1
+      y: 80,
+      ease: 'power2.out',
+      delay: index * 0.15
     });
   });
 }
