@@ -1,23 +1,9 @@
 /* Recruiting site — BigSlam "Tickets On Sale" style red banner → recruiting CTA with cutout. */
 function CTA({ onContact }) {
   const { KK, GLButton } = window;
-  const cutoutRef = React.useRef(null);
-
-  React.useEffect(() => {
-    if (cutoutRef.current && window.gsap) {
-      gsap.from(cutoutRef.current, {
-        duration: 2,
-        x: 500,
-        opacity: 0,
-        ease: 'power3.out',
-        delay: 0.3
-      });
-    }
-  }, []);
-
   return (
     <section style={{ position: 'relative', background: KK.red, color: '#fff', overflow: 'hidden', minHeight: 340 }}>
-      <div ref={cutoutRef} style={{ position: 'absolute', right: 'clamp(-30px, 4vw, 100px)', bottom: '-40px', height: '100%', width: 'clamp(180px, 28vw, 320px)', pointerEvents: 'none' }}>
+      <div data-cta-cutout style={{ position: 'absolute', right: 'clamp(-30px, 4vw, 100px)', bottom: '-40px', height: '100%', width: 'clamp(180px, 28vw, 320px)', pointerEvents: 'none' }}>
         <img src="../../assets/photos/kamri-cutout.webp" alt="Kamri Keith" style={{ position: 'absolute', bottom: 0, right: 0, height: 'auto', width: '100%', objectFit: 'contain', objectPosition: 'center bottom', filter: 'drop-shadow(-14px 0 26px rgba(15,18,22,.28))' }} />
       </div>
       <div style={{ position: 'relative', maxWidth: KK.wrap, margin: '0 auto', padding: '56px 20px', display: 'flex', alignItems: 'center', minHeight: 340 }}>

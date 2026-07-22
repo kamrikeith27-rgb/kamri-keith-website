@@ -352,22 +352,35 @@ function setupGalleryAnimations(gsap, ScrollTrigger) {
 
 function setupCTAAnimations(gsap, ScrollTrigger) {
   const ctaCutout = document.querySelector('[data-cta-cutout]');
-  if (!ctaCutout) return;
+  if (!ctaCutout) {
+    console.warn('CTA cutout not found');
+    return;
+  }
+
+  const section = ctaCutout.closest('section');
+  if (!section) {
+    console.warn('CTA section not found');
+    return;
+  }
+
+  console.log('Setting up CTA animation for:', ctaCutout);
 
   gsap.from(ctaCutout, {
     scrollTrigger: {
-      trigger: ctaCutout.parentElement,
-      start: 'top 85%',
-      end: 'top 50%',
+      trigger: section,
+      start: 'top 80%',
+      end: 'top 30%',
       scrub: 0.5,
-      markers: false
+      markers: false,
+      onEnter: () => console.log('CTA trigger entered')
     },
-    duration: 1.8,
+    duration: 2,
     opacity: 0,
-    x: 400,
-    scale: 0.5,
-    rotationZ: 45,
-    ease: 'back.out(1.8)'
+    x: 500,
+    scale: 0.6,
+    rotationZ: 30,
+    ease: 'back.out(1.8)',
+    onStart: () => console.log('CTA animation started')
   });
 }
 
