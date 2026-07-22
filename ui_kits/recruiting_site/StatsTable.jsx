@@ -36,18 +36,19 @@ function StatValue({ value }) {
 
   const animateNumber = (el, finalValue) => {
     if (!el) return;
-    
+
     const isDecimal = finalValue.includes('.');
     const startNum = isDecimal ? 0 : 0;
     const endNum = parseFloat(finalValue);
     const duration = 2000;
-    const startTime = Date.now();
+    let startTime = null;
 
-    const animate = () => {
-      const elapsed = Date.now() - startTime;
+    const animate = (timestamp) => {
+      if (startTime === null) startTime = timestamp;
+      const elapsed = timestamp - startTime;
       const progress = Math.min(elapsed / duration, 1);
       const current = startNum + (endNum - startNum) * progress;
-      
+
       if (isDecimal) {
         el.textContent = current.toFixed(3);
       } else {
@@ -60,8 +61,8 @@ function StatValue({ value }) {
         el.textContent = finalValue;
       }
     };
-    
-    animate();
+
+    requestAnimationFrame(animate);
   };
 
   return <div ref={ref} style={{ fontFamily: 'var(--font-display)', fontSize: 30, color: 'var(--ink-900)', lineHeight: 1 }}>{value}</div>;
