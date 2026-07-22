@@ -18,10 +18,6 @@
 <meta property="og:title" content="Kamri Keith · 2027 Softball Recruit — Utility / C / CF / IF · #00">
 <meta property="og:description" content="Class of 2027 utility player, #00. Brusly HS / LA Lady Dukes 16U. Stats, film, highlights & recruiter contact.">
 <meta property="og:image" content="https://kamrikeith.com/assets/og-image.jpg">
-<meta property="og:image:secure_url" content="https://kamrikeith.com/assets/og-image.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -93,11 +89,11 @@
       <span class="rs-display" style="font-size:20px;letter-spacing:.02em;color:var(--text-primary);">KAMRI <span style="color:var(--accent-bright);">KEITH</span></span>
     </a>
     <div class="kamri-desktop" style="display:flex;align-items:center;gap:30px;">
-      <a class="kamri-navlink" href="#stats" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-standard);">Stats</a>
-      <a class="kamri-navlink" href="#about" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-standard);">About</a>
-      <a class="kamri-navlink" href="#positions" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-standard);">Positions</a>
-      <a class="kamri-navlink" href="#highlights" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-standard);">Highlights</a>
-      <a class="kamri-navlink" href="#gallery" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-standard);">Gallery</a>
+      <a class="kamri-navlink" href="#stats" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;">Stats</a>
+      <a class="kamri-navlink" href="#about" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;">About</a>
+      <a class="kamri-navlink" href="#positions" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;">Positions</a>
+      <a class="kamri-navlink" href="#highlights" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;">Highlights</a>
+      <a class="kamri-navlink" href="#gallery" style="font-family:var(--font-condensed);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--text-muted);text-decoration:none;">Gallery</a>
       <a class="rs-btn rs-btn--primary rs-btn--sm" href="#contact" style="height:36px;">Contact</a>
     </div>
     <button class="kamri-hamburger" data-menu-open aria-label="Open menu" style="width:42px;height:42px;display:none;align-items:center;justify-content:center;background:rgba(22,26,34,.6);border:1px solid var(--line-strong);border-radius:var(--radius-sm);cursor:pointer;padding:0;">
@@ -108,7 +104,7 @@
 <div data-kamri-progress style="position:fixed;top:0;left:0;height:3px;width:0%;z-index:55;background:var(--gradient-line);box-shadow:0 0 12px rgba(59,130,246,.5);pointer-events:none;"></div>
 
 <!-- Mobile menu overlay -->
-<div data-menu-overlay hidden style="position:fixed;inset:0;z-index:60;background:rgba(11,14,19,.96);backdrop-filter:blur(6px);flex-direction:column;padding:22px var(--container-pad);box-sizing:border-box;">
+<div data-menu-overlay hidden style="position:fixed;inset:0;z-index:60;background:rgba(11,14,19,.96);backdrop-filter:blur(6px);flex-direction:column;padding:22px var(--container-pad);box-sizing:border-box;display:none;">
   <div style="display:flex;justify-content:space-between;align-items:center;">
     <span class="rs-display" style="font-size:20px;">KAMRI <span style="color:var(--accent-bright);">KEITH</span></span>
     <button data-menu-close aria-label="Close menu" style="width:42px;height:42px;background:transparent;border:1px solid var(--line-strong);border-radius:var(--radius-sm);color:var(--text-primary);font-size:20px;cursor:pointer;">✕</button>
@@ -156,56 +152,192 @@
   </div>
 </section>
 
-<section id="stats" style="padding:var(--section-y) var(--container-pad);background:var(--surface-page);">
-  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;">
-    <h2 class="rs-display" style="font-size:var(--text-display-1);margin:0 0 var(--space-6);color:var(--text-primary);">Quick Stats</h2>
-    <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4);opacity:0;transform:translateY(30px);will-change:transform;">
-      <div style="padding:var(--space-4);background:var(--surface-card);border-radius:var(--radius-card);border:1px solid var(--line);">
-        <p class="rs-eyebrow" style="margin:0 0 8px;color:var(--text-muted);">Position</p>
-        <p class="rs-display" style="font-size:28px;margin:0;color:var(--text-primary);">Utility · C / CF / IF</p>
+<!-- QUICK FACTS -->
+<section style="background:var(--sky-jet);border-block:1px solid var(--line);">
+  <div data-stagger style="width:100%;max-width:var(--container-max);margin-inline:auto;padding:0 var(--container-pad);box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));">
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">Class</div><div class="rs-display rs-tabular" style="font-size:26px;color:var(--sky-white);margin-top:6px;">2027</div></div>
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">Position</div><div class="rs-display" style="font-size:26px;color:var(--accent-bright);margin-top:6px;">C / CF / IF</div></div>
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">Bats / Throws</div><div class="rs-display" style="font-size:26px;color:var(--sky-white);margin-top:6px;">R / R</div></div>
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">Number</div><div class="rs-display rs-tabular" style="font-size:26px;color:var(--accent-bright);margin-top:6px;">00</div></div>
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">GPA</div><div class="rs-display rs-tabular" style="font-size:26px;color:var(--accent-bright);margin-top:6px;">3.87</div></div>
+    <div style="padding:26px 16px;border-right:1px solid var(--line);"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">School</div><div class="rs-display" style="font-size:20px;color:var(--sky-white);margin-top:6px;">Brusly HS</div></div>
+    <div style="padding:26px 16px;"><div class="rs-eyebrow" style="font-size:10px;color:var(--text-subtle);">Travel</div><div class="rs-display" style="font-size:20px;color:var(--sky-white);margin-top:6px;">Lady Dukes 16U</div></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="rs-bg-grid-lines" style="position:relative;overflow:hidden;background:var(--sky-ink);padding-block:var(--section-y);">
+  <span class="rs-ghost-numeral" aria-hidden="true" style="position:absolute;top:8%;right:-2%;font-size:clamp(240px,32vw,460px);">00</span>
+  <div style="position:relative;width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div data-reveal>
+      <div style="display:flex;align-items:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">01</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">The Numbers</span></div>
+      <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">2026 Season Stats</h2>
+      <div style="margin-top:16px;height:3px;width:96px;border-radius:999px;background:var(--gradient-line);"></div>
+      <p class="rs-eyebrow" style="margin-top:16px;font-size:11px;color:var(--text-subtle);">2026 season · current</p>
+    </div>
+
+    <div style="margin-top:48px;">
+      <div class="rs-eyebrow" style="color:var(--accent-bright);margin-bottom:16px;">Catching</div>
+      <div data-stagger style="display:flex;flex-wrap:wrap;gap:14px;">
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="28" style="font-size:var(--text-stat);line-height:.95;color:var(--accent-bright);">28</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">GAMES</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="18" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">18</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">HITS</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="8" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">8</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">RBI</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="12" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">12</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">RUNS</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="23" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">23</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">CS</div></div>
       </div>
-      <div style="padding:var(--space-4);background:var(--surface-card);border-radius:var(--radius-card);border:1px solid var(--line);">
-        <p class="rs-eyebrow" style="margin:0 0 8px;color:var(--text-muted);">Class</p>
-        <p class="rs-display" style="font-size:28px;margin:0;color:var(--accent-bright);">2027</p>
-      </div>
-      <div style="padding:var(--space-4);background:var(--surface-card);border-radius:var(--radius-card);border:1px solid var(--line);">
-        <p class="rs-eyebrow" style="margin:0 0 8px;color:var(--text-muted);">Number</p>
-        <p class="rs-display" style="font-size:28px;margin:0;color:var(--text-primary);">#00</p>
+    </div>
+
+    <div style="margin-top:36px;">
+      <div class="rs-eyebrow" style="color:var(--accent-bright);margin-bottom:16px;">Fielding</div>
+      <div data-stagger style="display:flex;flex-wrap:wrap;gap:14px;">
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count=".985" style="font-size:var(--text-stat);line-height:.95;color:var(--accent-bright);">.985</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">FIELDING %</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="42" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">42</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">PUTOUTS</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="15" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">15</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">ASSISTS</div></div>
+        <div class="rs-card" style="flex:1 1 140px;min-width:120px;background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:20px;box-shadow:var(--shadow-card);"><div class="rs-display rs-tabular" data-count="1" style="font-size:var(--text-stat);line-height:.95;color:var(--sky-white);">1</div><div class="rs-eyebrow" style="margin-top:12px;font-size:10px;letter-spacing:.18em;">ERROR</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<footer style="padding:var(--section-y) var(--container-pad);background:var(--surface-raised);border-top:1px solid var(--line);">
-  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6);margin-bottom:var(--space-8);">
+<!-- ABOUT -->
+<section id="about" style="background:var(--sky-ink);padding-block:var(--section-y);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div class="kamri-split">
+      <div data-reveal style="position:relative;">
+        <div style="position:relative;border-radius:var(--radius-hero);overflow:hidden;border:1px solid var(--line-strong);box-shadow:var(--shadow-raised);">
+          <img src="/assets/photos/kamri-brusly-portrait.webp" alt="Portrait of Kamri Keith" style="display:block;width:100%;height:auto;filter:saturate(.95) contrast(1.03);">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,30,77,0) 55%, rgba(10,14,19,.35) 100%);"></div>
+        </div>
+        <span class="rs-display" style="position:absolute;left:-10px;bottom:-16px;display:grid;place-items:center;height:56px;width:56px;border-radius:var(--radius-sm);background:var(--accent);color:var(--sky-white);font-size:30px;box-shadow:var(--shadow-card);">00</span>
+      </div>
+      <div data-reveal>
+        <div style="display:flex;align-items:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">02</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">The Player</span></div>
+        <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">About Kamri</h2>
+        <p style="margin-top:22px;color:var(--text-muted);font-size:var(--text-lg);line-height:1.65;max-width:52ch;">Kamri Keith is a versatile utility player who excels behind the plate and in the outfield. With excellent bat control, a competitive edge, and strong defensive fundamentals, she brings leadership and commitment to every position she plays. Off the field, Kamri is a dedicated student-athlete (3.87 GPA) who demonstrates the work ethic and coachability needed to compete at the college level.</p>
+        <blockquote style="margin:34px 0 0;padding:6px 0 6px 26px;border-left:3px solid var(--accent);">
+          <p class="rs-condensed" style="margin:0;font-style:italic;font-size:clamp(18px,2.4vw,24px);line-height:1.4;color:var(--sky-white);">&ldquo;I love the game and everything it teaches me — on the field and off. Playing multiple positions means I'm always learning and adapting.&rdquo;</p>
+          <cite class="rs-eyebrow" style="display:block;margin-top:16px;font-style:normal;color:var(--text-subtle);">Kamri Keith · on why she plays</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONS -->
+<section id="positions" style="background:var(--sky-ink);padding-block:var(--section-y);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div data-reveal>
+      <div style="display:flex;align-items:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">03</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">Versatility</span></div>
+      <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">Where She Plays</h2>
+      <div style="margin-top:16px;height:3px;width:96px;border-radius:999px;background:var(--gradient-line);"></div>
+    </div>
+    <div data-stagger style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:var(--radius-card);padding:28px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:10px;">
+        <span class="rs-display" style="font-size:22px;color:var(--sky-white);">Catcher</span>
+        <span style="color:var(--text-muted);font-size:14px;line-height:1.55;">Strong defensive skills behind the plate with excellent game-calling and a powerful arm.</span>
+      </div>
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:28px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:10px;">
+        <span class="rs-display" style="font-size:22px;color:var(--sky-white);">Center Field</span>
+        <span style="color:var(--text-muted);font-size:14px;line-height:1.55;">Range, arm strength, and instincts in the outfield with reliable decision-making.</span>
+      </div>
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-top:2px solid var(--line-strong);border-radius:var(--radius-card);padding:28px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:10px;">
+        <span class="rs-display" style="font-size:22px;color:var(--sky-white);">Infield</span>
+        <span style="color:var(--text-muted);font-size:14px;line-height:1.55;">Utility infield capability with solid footwork and versatility wherever needed.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights" style="background:var(--sky-ink);padding-block:var(--section-y);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div data-reveal>
+      <div style="display:flex;align-items:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">04</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">Tape</span></div>
+      <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">Featured Video</h2>
+      <div style="margin-top:16px;height:3px;width:96px;border-radius:999px;background:var(--gradient-line);"></div>
+    </div>
+
+    <div data-reveal style="margin-top:44px;">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius-card);border:1px solid var(--line-strong);">
+        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" src="https://www.youtube.com/embed/pfjTUmJ85aw?rel=0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+      <h3 style="font-family:var(--font-condensed);font-weight:600;font-size:18px;color:var(--text-primary);margin:16px 0 0;text-align:center;">Accuracy / LF OUT / THROW TO HOME</h3>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="rs-bg-grid-dots" style="background:var(--sky-ink);padding-block:var(--section-y);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div data-reveal>
+      <div style="display:flex;align-items:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">05</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">On the Field</span></div>
+      <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">Gallery</h2>
+      <div style="margin-top:16px;height:3px;width:96px;border-radius:999px;background:var(--gradient-line);"></div>
+    </div>
+    <div data-stagger class="kamri-gallery" style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%,200px), 1fr));grid-auto-rows:200px;gap:14px;grid-auto-flow:dense;">
+      <button class="rs-gallery-item" data-src="/assets/photos/kamri-brusly-portrait.webp" style="position:relative;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;cursor:pointer;background:var(--sky-jet-inset);"><img loading="lazy" src="/assets/photos/kamri-brusly-portrait.webp" alt="Kamri Keith portrait" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08);"><span data-tint style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,78,216,.18),rgba(29,78,216,.34));opacity:0;transition:opacity var(--dur-base) var(--ease-out-quint);"></span></button>
+      <button class="rs-gallery-item" data-src="/assets/photos/kamri-dukes-action-batting.webp" style="position:relative;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;cursor:pointer;background:var(--sky-jet-inset);"><img loading="lazy" src="/assets/photos/kamri-dukes-action-batting.webp" alt="Kamri Keith batting" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08);"><span data-tint style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,78,216,.18),rgba(29,78,216,.34));opacity:0;transition:opacity var(--dur-base) var(--ease-out-quint);"></span></button>
+      <button class="rs-gallery-item" data-src="/assets/photos/kamri-brusly-bat.webp" style="position:relative;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;cursor:pointer;background:var(--sky-jet-inset);"><img loading="lazy" src="/assets/photos/kamri-brusly-bat.webp" alt="Kamri Keith with bat" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08);"><span data-tint style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,78,216,.18),rgba(29,78,216,.34));opacity:0;transition:opacity var(--dur-base) var(--ease-out-quint);"></span></button>
+      <button class="rs-gallery-item" data-src="/assets/photos/kamri-catcher.webp" style="position:relative;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;cursor:pointer;background:var(--sky-jet-inset);"><img loading="lazy" src="/assets/photos/kamri-catcher.webp" alt="Kamri Keith catching" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08);"><span data-tint style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,78,216,.18),rgba(29,78,216,.34));opacity:0;transition:opacity var(--dur-base) var(--ease-out-quint);"></span></button>
+      <button class="rs-gallery-item" data-src="/assets/photos/kamri-catcher-dukes.webp" style="position:relative;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;cursor:pointer;background:var(--sky-jet-inset);"><img loading="lazy" src="/assets/photos/kamri-catcher-dukes.webp" alt="Kamri Keith in gear" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08);"><span data-tint style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,78,216,.18),rgba(29,78,216,.34));opacity:0;transition:opacity var(--dur-base) var(--ease-out-quint);"></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--surface-raised);padding-block:var(--section-y);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad);box-sizing:border-box;">
+    <div data-reveal style="text-align:center;">
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;"><span class="rs-display rs-tabular" style="color:var(--accent-bright);font-size:14px;">06</span><span style="height:1px;width:32px;background:var(--accent);"></span><span class="rs-eyebrow">Get In Touch</span></div>
+      <h2 class="rs-display" style="font-size:var(--text-display-1);margin-top:16px;">Recruiter Inquiry</h2>
+      <div style="margin:16px auto 0;height:3px;width:96px;border-radius:999px;background:var(--gradient-line);"></div>
+    </div>
+
+    <div data-reveal style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius-card);padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span class="rs-eyebrow" style="color:var(--accent-bright);">Email</span>
+        <a href="mailto:kamrikeith27@gmail.com" style="color:var(--accent-bright);text-decoration:none;font-size:16px;font-weight:500;">kamrikeith27@gmail.com</a>
+      </div>
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius-card);padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span class="rs-eyebrow" style="color:var(--accent-bright);">Kamri</span>
+        <a href="tel:+12255771358" style="color:var(--accent-bright);text-decoration:none;font-size:16px;font-weight:500;">(225) 577-1358</a>
+      </div>
+      <div class="rs-card" style="background:var(--surface-card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius-card);padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span class="rs-eyebrow" style="color:var(--accent-bright);">Kim (Mom)</span>
+        <a href="tel:+12255772606" style="color:var(--accent-bright);text-decoration:none;font-size:16px;font-weight:500;">(225) 577-2606</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--surface-raised);padding:var(--section-y) var(--container-pad);border-top:1px solid var(--line);">
+  <div style="width:100%;max-width:var(--container-max);margin-inline:auto;box-sizing:border-box;">
+    <div data-footer-col style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-6);margin-bottom:var(--space-8);">
       <div>
-        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);color:var(--text-primary);">Contact</h4>
-        <p style="margin:0;color:var(--text-muted);">
-          <a href="mailto:kamrikeith27@gmail.com" style="color:var(--accent-bright);text-decoration:none;">kamrikeith27@gmail.com</a><br>
-          Kamri: <a href="tel:+12255771358" style="color:var(--accent-bright);text-decoration:none;">(225) 577-1358</a><br>
-          Kim (Mom): <a href="tel:+12255772606" style="color:var(--accent-bright);text-decoration:none;">(225) 577-2606</a>
-        </p>
+        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);">Kamri Keith</h4>
+        <p style="margin:0;color:var(--text-muted);font-size:14px;line-height:1.65;">Class of 2027 utility player. Ready to compete at the college level.</p>
       </div>
       <div>
-        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);color:var(--text-primary);">Team Info</h4>
-        <p style="margin:0;color:var(--text-muted);">
-          Brusly High School<br>
-          Brusly, Louisiana<br>
-          LA Lady Dukes 16U
-        </p>
+        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);">Navigation</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+          <a href="#stats" style="color:var(--accent-bright);text-decoration:none;">Stats</a>
+          <a href="#about" style="color:var(--accent-bright);text-decoration:none;">About</a>
+          <a href="#gallery" style="color:var(--accent-bright);text-decoration:none;">Gallery</a>
+          <a href="#highlights" style="color:var(--accent-bright);text-decoration:none;">Highlights</a>
+        </div>
       </div>
       <div>
-        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);color:var(--text-primary);">Follow</h4>
-        <p style="margin:0;color:var(--text-muted);">
-          <a href="https://www.youtube.com/@kamrikeithsoftball2027" style="color:var(--accent-bright);text-decoration:none;">YouTube</a><br>
-          <a href="https://www.instagram.com/kamri_keith" style="color:var(--accent-bright);text-decoration:none;">Instagram</a><br>
-          <a href="https://x.com/kamrikeith2027" style="color:var(--accent-bright);text-decoration:none;">X</a>
-        </p>
+        <h4 class="rs-display" style="font-size:16px;margin:0 0 var(--space-3);">Follow</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+          <a href="https://www.youtube.com/@kamrikeithsoftball2027" target="_blank" style="color:var(--accent-bright);text-decoration:none;">YouTube</a>
+          <a href="https://www.instagram.com/kamri_keith" target="_blank" style="color:var(--accent-bright);text-decoration:none;">Instagram</a>
+          <a href="https://x.com/kamrikeith2027" target="_blank" style="color:var(--accent-bright);text-decoration:none;">X</a>
+        </div>
       </div>
     </div>
     <div style="border-top:1px solid var(--line);padding-top:var(--space-4);text-align:center;color:var(--text-subtle);font-size:12px;">
-      <p style="margin:0;">© 2026 Kamri Keith · Built by <a href="https://blaksheepcreative.com" style="color:var(--text-subtle);text-decoration:none;">BlakSheep Creative</a></p>
+      <p style="margin:0;">© 2026 Kamri Keith · Built by <a href="https://blaksheepcreative.com" target="_blank" style="color:var(--text-subtle);text-decoration:none;">BlakSheep Creative</a></p>
     </div>
   </div>
 </footer>
