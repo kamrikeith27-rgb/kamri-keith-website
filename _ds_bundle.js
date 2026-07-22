@@ -3172,7 +3172,8 @@ function SocialApp() {
     }
   }, g.label))), /*#__PURE__*/React.createElement(Frame, null, /*#__PURE__*/React.createElement(Active, null))));
 }
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(SocialApp, null));
+// Recruiting site only — SocialApp render disabled
+// ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(SocialApp, null));
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/social_kit/SocialApp.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/social_kit/Spotlight.jsx
