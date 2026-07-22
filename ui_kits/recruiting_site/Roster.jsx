@@ -5,7 +5,7 @@ function Roster() {
     { img: 'kamri-catcher.webp', name: 'Catcher', stat: 'Behind the plate', no: '01' },
     { img: 'kamri-brusly-bat.webp', name: 'Center Field', stat: 'Range & arm', no: '02' },
     { img: 'kamri-brusly-portrait.webp', name: 'Utility / Infield', stat: 'Anywhere needed', no: '03' },
-    { img: 'portrait-red.webp', name: 'Slapper', stat: 'Speed & contact', no: '04' },
+    { img: 'kamri-catcher-dukes.webp', name: 'Slapper', stat: 'Speed & contact', no: '04' },
   ];
 
   const handleCardHover = (e, isHover) => {
