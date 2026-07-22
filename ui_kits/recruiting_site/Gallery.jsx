@@ -3,9 +3,9 @@ function Gallery() {
   const { KK } = window;
   const imgs = [
     'kamri-gallery-1.jpg',
-    'kamri-gallery-2.png',
     'kamri-dukes-portrait.jpg',
     'kamri-dukes-action-batting.jpg',
+    'kamri-brusly-bat.webp',
   ];
   
   const [lightboxOpen, setLightboxOpen] = React.useState(false);
