@@ -40,7 +40,7 @@ function Videos() {
   }
   
   return (
-    <section id="highlights" style={{ background: KK.ink, padding: '90px 20px' }}>
+    <section id="highlights" data-scroll-reveal style={{ background: KK.ink, padding: '90px 20px' }}>
       <div style={{ maxWidth: KK.wrap, margin: '0 auto' }}>
         <SectionHead light eyebrow="Watch the film" title="Featured Videos" action={<GLButton variant="red" size="sm" href={YOUTUBE_CHANNEL_URL} target="_blank">View Channel</GLButton>} />
         
@@ -141,8 +141,8 @@ function Videos() {
           </button>
         </div>
         
-        {/* Clip grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))', gap: 16 }}>
+        {/* Clip grid - centered on desktop */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 16, maxWidth: 900, marginInline: 'auto' }}>
           {filteredClips.map((clip, i) => (
             <button
               key={i}
