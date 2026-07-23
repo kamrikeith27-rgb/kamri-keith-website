@@ -1,0 +1,13 @@
+{
+  "name": "kamri-keith-website",
+  "version": "1.0.0",
+  "description": "Kamri Keith - 2027 Softball Recruit Website",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8000 || python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
